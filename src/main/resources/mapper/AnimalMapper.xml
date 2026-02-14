@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.VeterinaryClinic.Mapper.AnimalMapper">
+
+<resultMap id="animalMap" type="com.example.VeterinaryClinic.DTO.AnimalDTO">
+ 		<id property="id" column="ID"/>
+        <result property="cd" column="CD"/>
+        <result property="description" column="DESCRIPTION"/>
+        <result property="insUser" column="INS_USER"/>
+        <result property="insTime" column="INS_TIME"/>
+        <result property="modUser" column="MOD_USER"/>
+        <result property="modTime" column="MOD_TIME"/>
+    </resultMap>
+
+ 	<select id="getDogs" resultMap="animalMap">
+ 	<![CDATA[
+        SELECT CD, DESCRIPTION FROM DOG
+        ORDER BY 
+		  CASE 
+		    WHEN DESCRIPTION = '기타' THEN 1
+		    ELSE 0
+		  END,
+		  DESCRIPTION
+        ]]> 
+    </select>   
+    
+   	<select id="getCats" resultMap="animalMap">
+   	 	<![CDATA[
+	      SELECT CD, DESCRIPTION FROM CAT
+	        ORDER BY 
+			  CASE 
+			    WHEN DESCRIPTION = '기타' THEN 1
+			    ELSE 0
+			  END,
+			  DESCRIPTION	      
+	    ]]>
+    </select> 
+    
+</mapper>

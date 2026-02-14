@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/* 스타일 초기화 */
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none; /*lis:n*/
+}
+a{
+    text-decoration: none; /*td:n*/
+    color:#464547;
+    
+}
+img{
+    border: 0;
+}
+body{
+    font: 14px 'Noto Sans KR', sans-serif;
+    color:#464547;
+}
+clearfix::after{
+    
+}

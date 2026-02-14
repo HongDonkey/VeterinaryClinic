@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <div th:insert="~{fragments/commonLink :: commonLink}"></div>
+	<script th:src="@{/js/sub6_1.js}"></script>
+	<link th:href="@{/css/sub2_3.css}" rel="stylesheet">     
+    <title>응급진료 안내</title>
+
+     <script>
+       $(function(){ //jQuery 시작
+
+          
+           
+      }); //jQuery 종료
+    </script>
+   
+</head>
+<body>
+	<div th:insert="~{fragments/header :: header}"></div>
+    
+    <!--서브 네비게이션-->  
+	<div th:insert="~{fragments/sub2 :: sub2}"></div>
+    
+    <!--서브 상단 제목-->
+    <div id="sub_top_t_wrap" class="row_center">
+        <h3 class="sub_top_t">응급진료 안내</h3>
+        
+        <div class="sub_top_box">
+           <figure><img src="img/sub/sub_common/circle.png" alt="포인트1"></figure>
+            <p>신속한 처치와 진단을 통해 생명을 구하고, 최단시간 내에 정상 내지는 이에 가까운 상태로 회복시켜 계속되는 치료나 수술, 또는 재활의 치료효과를 높이는 응급의료를 제공합니다.</p>
+        </div>
+    </div>
+    
+    <!--응급진료안내_sub2_3_content-->
+    <div id="s2_3_con_wrap">
+    <div class="s2_3_t_i_wrap"> <!--이미지 100%-->
+        <div class="t_i_l">
+            <div class="t_i_txt_wrap">   
+            <!--<div class="t_i_txt">
+            <strong>건국대학교 부속동물병원,</strong>
+            <h3>응급진료센터는 이점이 다릅니다!</h3>
+            </div>-->
+            <figure><img src="img/sub/sub2_m_info/sub2_3/sub2_3_txt.png" alt="응급진료센터는 이점이 다릅니다!"></figure>
+        </div>
+        </div>    
+        
+        <div class="t_i_r">
+        <figure><img src="img/sub/sub2_m_info/sub2_3/sub2_3_img2.png" alt="응급의료 이미지"></figure>
+        </div>
+       </div>
+       <!--s2_3_t_i_wrap_상단이미지///////////-->
+    
+       <div class="s2_3_m_wrap">
+        <!--중간 텍스트 박스-->
+         <div id="mid_txt_wrap" class="row_center">
+            <ul class="mid_txt_b1">
+                <li><figure><img src="img/sub/sub2_m_info/sub2_3/s2_3_t1.png" alt="01"></figure>
+                <div class="mid_txt">
+                <strong>수준 높은 응급진료가 가능합니다.</strong>
+                <span>응급진료시 응급중환자의학과 교수, 내·외과 및 영상 전공의들의 진료와 검사를 진행하므로, 수준 높고 전문화된 검사 및 처치가 가능합니다.</span></div>
+                </li>
+            </ul>
+            
+              <ul class="mid_txt_b2">
+                <li><figure><img src="img/sub/sub2_m_info/sub2_3/s2_3_t2.png" alt="02"></figure>
+                <div class="mid_txt">
+                <strong>야간 및 주말 응급수술이 가능합니다.</strong>
+                    <span>수의외과학 박사인 응급중환자의학과 교수의 지휘하에 응급수술팀이 대기하고 있으므로,안전하고 수준 높은 응급수술이 가능합니다.</span></div>
+                </li>
+            </ul>
+            
+            <ul class="mid_txt_b3">
+                <li><figure><img src="img/sub/sub2_m_info/sub2_3/s2_3_t3.png" alt="03"></figure>
+                <div class="mid_txt">
+                <strong>지역병원과 협진체계를 원활히 진행합니다.</strong>
+                    <span>지역병원과의 소통을 원활히 하여 환자의 상태를 보다 정확하게 파악하고, 검사의 중복을 최소화하여 보호자에게 최대한의 편의를 제공합니다.</span></div>
+                </li>
+            </ul>    
+         </div>
+       </div>
+       <!--s2_3_m_wrap 중간 텍스트 박스//////////-->
+       
+       <!--하단 이미지 박스/////////////-->
+        <div id="s2_3_bt_i_wrap"> <!--이미지 100%-->
+        <div class="bt_left_wrap">
+        <figure></figure>
+        </div>
+            
+        <div class="bt_right_wrap">
+        <div class="bt_i_r">
+        <div class="bt_i_txt_wrap">   
+           <h3>응급중환자의학과 응급 전화번호</h3>
+           
+           <span></span><strong>02-450-3664</strong>
+           
+        </div>
+       </div>
+       </div>
+       </div><!--s2_3_bt_i_wrap-->
+           
+    </div><!--s2_3_con_wrap///////////-->
+
+          
+           
+         
+           
+               
+        
+    <div th:insert="~{fragments/footer :: footer}"></div> 
+    <!--end:footer-->
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+
+</head>
+<body>
+	<header th:fragment="sub2">
+	  <!--서브 대메뉴 배경-->
+    <!--접수 및 절차안내_sub2_1_content-->
+    <div id="con_sub6_1_top_bg">
+         <div id="sub6_1_top_bg"><img src="img/sub/sub2_m_info/sub2_1/sub2_img1.png" alt="프로그램">
+         <h3>진료안내</h3>
+         </div><!--sub_img-->
+    </div><!--con_sub6_1_top_bg--> <!--상단이미지-->
+	<div id="con_sub_navi_wrap">
+		<div id="con_sub_navi_wrap_2">
+			<div id="con_sub_navi" class="row_center">
+				<div class="home">
+					<a th:href="@{/}">홈</a>
+				</div>
+				<!--home 아이콘-->
+
+				<!--<nav class="gnb_navi">-->
+				<ul>
+					<li><a>진료안내
+							<div class="arrow_btn">
+								<span class="material-icons">expand_more</span>
+							</div></a>
+					
+						<div class="con_navi_sec">
+							<ul>
+								<li><a th:href="@{/notice_schd}"><span>일정/예약/조회<strong></strong></span></a>
+								<li><a th:href="@{/reception}"><span>진료안내<strong></strong></span></a>
+								<li><a th:href="@{/internal}"><span>진료과목<strong></strong></span></a>
+								<li><a th:href="@{/internalTeam}"><span>의료진<strong></strong></span></a>
+								<li><a th:href="@{/history}"><span>병원소개<strong></strong></span></a>
+								<li><a th:href="@{/healthInfo}"><span>프로그램<strong></strong></span></a>
+							</ul>
+						</div>
+					</li>
+					<!-- </nav>gnb_navi-->
+
+					<!--<nav class="sub_navi">-->
+					<li><a>접수 및 절차 안내
+							<div class="arrow_btn">
+								<span class="material-icons">expand_more</span>
+							</div>
+					</a>
+						<div class="con_navi_sec">
+							<ul>
+								<li><a th:href="@{/reception}">접수 및 절차 안내</a></li>
+								<li><a th:href="@{/admission}">입원 및 면회 안내</a></li>
+								<li><a th:href="@{/emergency}">응급진료 안내</a></li>
+							</ul>
+						</div></li>
+				</ul>
+			</div>
+			<!--sub_navi-->
+		</div>
+	</div>
+	<!--sub_navi_wrap//////////////////-->
+	</header>
+</body>
+</html>

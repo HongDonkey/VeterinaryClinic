@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.VeterinaryClinic.Mapper.DoctorMapper">
+
+<resultMap id="doctorMap" type="com.example.VeterinaryClinic.DTO.DoctorDTO">
+ 		<id property="id" column="ID"/>
+        <result property="name" column="NAME"/>
+        <result property="dept" column="DEPT"/>
+        <result property="insUser" column="INS_USER"/>
+        <result property="insTime" column="INS_TIME"/>
+        <result property="modUser" column="MOD_USER"/>
+        <result property="modTime" column="MOD_TIME"/>
+    </resultMap>
+    
+ 	<select id="getDoctor" resultMap="doctorMap">
+        SELECT * FROM DOCTOR
+        WHERE DEPT = #{dept}
+    </select>   
+    
+</mapper>

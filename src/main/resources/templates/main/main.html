@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div th:replace="~{fragments/commonLink :: commonLink}"></div>
+	<script th:src="@{/js/jquery.easing.1.3.js}"></script>
+	<script th:src="@{/js/today_close.js}"></script>
+	<script th:src="@{/js/sub6_1.js}"></script>
+	<script th:src="@{/js/main_slide.js}"></script>
+	<link th:href="@{/css/sub2_1.css}" rel="stylesheet">
+	<link th:href="@{dist/css/swiper.min.css}" rel="stylesheet">
+	<link th:href="@{css/ku_main.css}" rel="stylesheet">
+    <title>건국대학교 부속동물병원</title>
+
+     <script>
+       $(function(){ //jQuery 시작
+
+          
+           
+      }); //jQuery 종료
+    </script>
+
+</head>
+<body>
+    <div th:replace="fragments/header :: header"></div>
+
+    
+        <!--content///////-->
+        <div id="content">
+          <div class="main_top_bg"> 
+           <div id="main_top_img"  class="row_center">
+            <div id="main_slide_img">
+               
+              
+              <!-- Swiper ///////////////-->
+              <div class="swiper-container">
+              <div class="swiper-wrapper">
+               <div class="swiper-slide">
+               <a th:href="@{/healthInfo}"><img src="img/main/m_c1.png" alt="2021년 광견병 예방접종" class="pc_img1">
+               </a></div>
+               <div class="swiper-slide">
+               <a th:href="@{/healthInfo}"><img src="img/main/m_c2.png" alt="36마리의 헌혈 영웅을 찾습니다!" class="pc_img1"></a>
+               </div>
+               <div class="swiper-slide">
+               <a th:href="@{/healthInfo}"><img src="img/main/m_c6.png" alt="심장사상충 검사 안내" class="pc_img1"></a>
+               </div>
+               <div class="swiper-slide">
+                   <a th:href="@{/healthInfo}"><img src="img/main/m_c7.png" alt="반려동물 코로나19 검사 안내" class="pc_img1"></a>
+               </div>
+               
+               
+               <!-- Add Arrows -->
+               <span class="top_prev"><img src="img/main/prev_1.png" alt="이전"></span>
+               <span class="top_next"><img src="img/main/next_1.png" alt="다음"></span>
+               
+               </div><!--swiper-wrapper-->
+               </div><!--swiper-container-->
+                
+               
+
+            <div id="main_slide_box">
+                <ul>
+                    <li><a th:href="@{/healthInfo}">#1<br>2021년 광견병 예방접종 안내</a></li>
+                    <li><a th:href="@{/healthInfo}">#2<br>36마리의 헌혈 영웅을 찾습니다!</a></li>
+                    <li><a th:href="@{/healthInfo}">#3<br>심장사상충 검사 안내</a></li>
+                    <li><a th:href="@{/healthInfo}">#4<br>반려동물 코로나19 검사 안내</a></li>
+                </ul>
+            </div>
+
+            
+           </div><!--main_top_img-->
+           </div><!--main_top_bg-->
+           
+            <!--모바일 슬라이드이미지//////-->
+              <div id="mb_top_slide">
+              <div class="swiper-container sw2">
+              <div class="swiper-wrapper">
+                 <div class="swiper-slide"><a th:href="@{/healthInfo}">
+                <img src="img/main/images/mb_c1.png" alt="2021년 광견병 예방접종" class="mb_img1">
+                 </a></div>
+                  
+                  <div class="swiper-slide"><a th:href="@{/healthInfo}">
+                      <img src="img/main/images/mb_c2.png" alt="36마리의 헌혈 영웅을 찾습니다!" class="mb_img1"></a>
+                  </div>
+
+                  
+                  <div class="swiper-slide"><a th:href="@{/healthInfo}">
+                      <img src="img/main/images/mb_c6.png" alt="심장사상충 검사 안내" class="mb_img1"></a>
+                  </div>
+    
+                  
+                  <div class="swiper-slide"><a th:href="@{/healthInfo}">
+                  <img src="img/main/images/mb_c7.png" alt="반려동물 코로나19 검사 안내" class="mb_img1">
+                  </a></div>
+                  
+                  </div>
+            </div><!--swiper-container sw2-->
+            
+            <!--모바일 블릿버튼-->
+            <div class="swiper-pagination"></div>
+  
+            </div><!--mb_top_slide-->
+            </div><!--main_top_bg-->
+           
+           <!--전문진료안내////////////-->
+           <div id="con_top_icon_wrap">
+              <div id="con_top_icon_title" class="row_center">
+                  <strong>전문진료 안내</strong><span>Specialist Information</span>
+              </div><!--main_top_icon_title-->
+              
+              
+              <!--swiper2/////////-->
+              
+                <div id="con_top_icon" class="row_center">
+               
+                <div class="swiper-container sw3">
+                  <ul class="swiper-wrapper">
+                      <li class="swiper-slide"><a th:href="@{/internal}">
+                          <img src="img/main/m_1.png" alt="내과"><span>내과</span>
+                      </a></li>
+                      <li class="swiper-slide"><a th:href="@{/surgical}">
+                          <img src="img/main/m_2.png" alt="외과"><span>외과</span>
+                      </a></li>
+                      <li class="swiper-slide"><a th:href="@{/ophth}">
+                          <img src="img/main/m_3.png" alt="안과"><span>안과</span>
+                      </a></li>
+                      <li class="swiper-slide"><a th:href="@{/radiology}">
+                          <img src="img/main/m_5.png" alt="영상의학과"><span>영상의학과</span>
+                      </a></li>
+                      <li class="swiper-slide"><a th:href="@{/radiology}">
+                          <img src="img/main/m_4.png" alt="임상병리과"><span>임상병리과</span>
+                      </a></li>
+                      <li class="swiper-slide"><a th:href="@{/critical}">
+                          <img src="img/main/m_6.png" alt="응급중환자의학과"><span>응급중환자의학과</span>
+                      </a></li>
+                  </ul><!--swiper-wrapper-->  
+                 </div><!--swiper-container-->
+            
+
+                 <!-- Add Arrows -->
+    <div class="swiper-button-next next_2"></div>
+    <div class="swiper-button-prev prev_2"></div>
+                  
+                  </div><!--con_top_icon-->
+                
+                
+                
+                </div><!--con_top_icon_wrap-->
+                
+                <!--진료일정안내,예약,조회 박스//////-->
+                <div id="con_medical_wrap">
+                   <div id="con_box1" class="row_center">
+                       <ul class="con_box">
+                           <li><a th:href="@{/notice_schd}">진료일정 안내<span>방문 전 진료시간을 확인해보세요.</span><span class="icon1"></span>
+                           
+                           <div class="con_box_plus">
+                           <span class="con_box1_btn">
+                               <img src="img/main/plus.png" alt="버튼 플러스">
+                           </span>
+                           </div>
+                           </a>
+                           
+                           </li>
+                           <li><a th:href="@{/reservation}">진료예약<span>예약 및 진료의뢰 필요하신가요?</span ><span class="icon2"></span>
+                           <div class="con_box_plus">
+                           <span class="con_box1_btn">
+                               <img src="img/main/plus.png" alt="버튼 플러스">
+                           </span>
+                           </div>
+                           </a></li>
+                           <li><a th:href="@{/map}">오시는 길<span>병원 방문을 도와드릴까요?</span><span class="icon3"></span>
+                           <div class="con_box_plus">
+                           <span class="con_box1_btn">
+                               <img src="img/main/plus.png" alt="버튼 플러스">
+                           </span>
+                           </div>
+                           </a></li>
+                       </ul>
+                    </div><!--con_box1-->
+                    
+                    
+                    <!--의료진안내,응급진료안내 박스-->
+                    <div id="con_box2" class="row_center">
+                       <div id="con_box2_img"> <!--이미지그룹-->
+                       <div id="left_img"><a href="KU_VM_TH_sub4_1.html">
+                           <img src="img/main/m_c3.png" alt="의료진">
+                       
+                       <div class="con_box2_txt">
+                         <strong>의료진 안내</strong><span>건국대학교 부속동물병원<br>전문 의료인을 만나보세요.</span>  
+                       </div></a>
+                       
+                      
+                       <div class="con_box_plus">
+                           <span class="con_box2_btn">
+                             <a href="KU_VM_TH_sub4_1.html"><img src="img/main/plus.png" alt="버튼 플러스"></a>
+                           </span>
+                           </div>
+                        </div>
+                       
+                       <div id="right_img" >
+                           <a href="KU_VM_TH_sub2_3.html"><img src="img/main/m_c4.png" alt="응급진료">
+                         <div class="con_box2_txt">  
+                         <strong>응급진료 안내</strong><span>응급중환자의학과 교수의 지휘하에<br>응급수술팀이 대기하고 있으므로<br>안전하고 수준 높은 응급수술이 가능합니다.</span> 
+                       </div></a>
+                       
+                       <div class="con_box_plus">
+                           <span class="con_box2_btn">
+                               <a href="KU_VM_TH_sub2_3.html"><img src="img/main/plus.png" alt="버튼 플러스"></a>
+                           </span>
+                           </div>
+                        </div>
+                    </div><!--con_box2_img-->
+                  
+                    </div><!--con_box2-->
+                 </div><!--con_medical_wrap-->
+            
+                <!--모바일 증상으로 알아보는 반려동물 질병-->
+                     <div id="mb_con_box3_img">
+                        <ul>
+                         <li><a th:href="@{/healthInfo}"><span></span>증상으로 알아보는 반려동물 질병</a></li></ul>
+                    </div><!--mb_con_box3_img-->
+                 
+                 <!--증상으로 알아보는 반려동물질병-->
+                 <div id="con_box3" class="row_center">
+                     <div id="con_box3_left">
+                         <h3 class="con_box3_txt">증상으로 알아보는 반려동물 질병</h3>
+                         
+                         <ul class="con_box3_title">
+                             <li><a th:href="@{/healthInfo}">복명음</a></li>
+                             <li><a th:href="@{/healthInfo}">구토</a></li>
+                             <li><a th:href="@{/healthInfo}">설사</a></li>
+                             <li><a th:href="@{/healthInfo}">기침</a></li>
+                             <li><a th:href="@{/healthInfo}">입냄새</a></li>
+                             <li><a th:href="@{/healthInfo}">코골이</a></li>
+                             <li><a th:href="@{/healthInfo}">다리저림</a></li>
+                             <li><a th:href="@{/healthInfo}">눈물자국</a></li>
+                             <li><a th:href="@{/healthInfo}">묽은 변</a></li>
+                             <li><a th:href="@{/healthInfo}">구강호흡</a></li>
+                             <li><a th:href="@{/healthInfo}">긁는습관</a></li>
+                             <li><a th:href="@{/healthInfo}">비듬</a></li>
+                             <li><a th:href="@{/healthInfo}">잦은소변</a></li>
+                             <li><a th:href="@{/healthInfo}">눈곱</a></li>
+                             <li><a th:href="@{/healthInfo}">음식거부</a></li>
+                             <li><a th:href="@{/healthInfo}">복부팽창</a></li>
+                             <li><a th:href="@{/healthInfo}">잦은가스</a></li>
+                             <li><a th:href="@{/healthInfo}">하울링</a></li>
+                         </ul>
+                    </div><!--con_box3_left-->
+                    
+                     <div id="con_box3_right">
+                         <h3 class="con_box3_txt">공지사항</h3>
+                         
+                         <div id="con_box3_r_notice">
+                             <ul>
+                                 <li><a href="http://jhwork.dothome.co.kr/xe/notice"><h4>공지</h4><div class="description"><strong>노령동물 전문 메디컬 센터개설</strong><time datetime="2021-02-15">2021-02-15</time></div></a></li>
+                                 
+                                 <li><a href="http://jhwork.dothome.co.kr/xe/notice"><h4>공지</h4><div class="description"><strong>2021년 설 연휴 일반진료 및 응급진료 안내</strong><time datetime="2021-02-05">2021-02-05</time></div></a></li>
+                                 
+                                 <li><a href="http://jhwork.dothome.co.kr/xe/notice"><h4>공지</h4><div class="description"><strong>2021년도 전공의(인턴) 1차 모집 합격자 명단</strong><time datetime="2021-01-11">2021-01-11</time></div></a></li>
+                                 
+                                 <li><a href="http://jhwork.dothome.co.kr/xe/notice"><h4>공지</h4><div class="description"><strong>코로나바이러스 감염증-19 확산에 대한 내원객</strong><time datetime="2020-12-18">2020-12-18</time></div></a></li>
+                             </ul>
+                         </div><!--con_box3_r_notice-->
+                         
+                         <div id="mb_con_box3_r_notice">
+                             <ul>
+                                 <li><a href="http://jhwork.dothome.co.kr/xe/notice"><h4>공지</h4><div class="description"><strong>노령동물 전문 메디컬 센터개설</strong><time datetime="2021-02-15">2021-02-15</time></div></a></li>
+                                 
+                                 <li><a href="http://jhwork.dothome.co.kr/xe/notice"><h4>공지</h4><div class="description"><strong>2021년 설 연휴 일반진료 및 응급진료 안내</strong><time datetime="2021-02-05">2021-02-05</time></div></a></li>
+                                 
+                                 <li><a href="http://jhwork.dothome.co.kr/xe/notice"><h4>공지</h4><div class="description"><strong>2021년도 전공의(인턴) 1차 모집 합격자 명단</strong><time datetime="2021-01-11">2021-01-11</time></div></a></li>
+                                 
+                                 <li><a href="http://jhwork.dothome.co.kr/xe/notice"><h4>공지</h4><div class="description"><strong>코로나바이러스 감염증-19 확산에 대한 내원객</strong><time datetime="2020-12-18">2020-12-18</time></div></a></li>
+                             </ul>
+                         </div><!--con_box3_r_notice-->
+                         
+                     </div><!--con_box3_right-->
+                    </div><!--con_box3-->
+            
+                    
+                    
+                    <!--하단 병원정보 및 사진-->
+                    <div id="con_box4_wrap">
+                        
+                     <figure class="left_wrap">
+                         <div id="con_box4_left">
+                            <figure><img src="img/main/m_bottom_txt.png" alt="버튼 플러스"></figure> 
+                           </div>
+                     </figure> <!--강아지 사람손 이미지-->
+                     
+                      <!--이미지,배경100%-->
+                      
+                       <div id="con_box4">
+                         
+                        <div id="con_box4_right">
+                         <div id="con_box4_all"> 
+                         <section id="content_call">
+                              <span></span>
+                              
+                              <div class="con_box_t_all">
+                              <h3 class="con_box4_t">건국대학교 부속동물병원 문의전화</h3>
+                              <strong>02-450-3664</strong> <span>(원무행정실)</span>
+                              </div>
+                             </section><!--call-->
+                          
+                          <section id="content_time">
+                              <span></span>
+                              
+                              <div class="con_box_t_all">
+                              <h3 class="con_box4_t">진료시간 안내</h3>
+                              <strong>평일 오전 9:30 ~ 오후 17:30 <span>(예약진료)</span></strong>
+                              <strong>주말 오전 9:30 ~ 오후 16:30 <span>(예약진료)</span></strong><span>※야간진료는 응급진료센터 방문해주시기 바랍니다.</span>
+                              </div>
+                              
+                              <div class="con_box_t_all_mb2">
+                              <h3 class="con_box4_t">진료시간 안내</h3>
+                              <strong>평일 오전 9:30 ~ 오후 17:30 <br> <span>(예약진료)</span></strong><br>
+                              <strong>주말 오전 9:30 ~ 오후 16:30 <br><span>(예약진료)</span><br></strong><span>※야간진료는 응급진료센터 방문해주시기 바랍니다.</span>
+                              </div>
+                           </section><!--time-->
+                           
+                         <section id="content_24">
+                              <span></span>
+                              
+                              <div class="con_box_t_all">
+                              <h3 class="con_box4_t">24시 응급의료센터</h3>
+                              <strong>02-456-3664</strong> <span>(전화 문의 후 내원하실 것을 권장 드립니다.)</span>
+                             </div>
+                             
+                             <div class="con_box_t_all_mb">
+                              <h3 class="con_box4_t">24시 응급의료센터</h3>
+                              <strong>02-456-3664</strong> <br><span>(전화 문의 후 내원하실 것을 권장 드립니다.)</span>
+                             </div>
+                          </section><!--24-->  
+                         
+                         </div><!--con_box4_all-->
+                       </div>
+                           
+                       </div><!--con_box4-->
+                       <!--pc-->
+                       
+                </div><!--con_box4_wrap-->
+                
+                <!--모바일con_box4-->
+                       <div id="con_box4_mb_bg">
+                           <figure><img src="img/main/images/mb_c5_txt_bg.png" alt="건국대학교 부속동물병원"></figure>
+                       </div><!--con_box4_mb_bg-->
+                       
+                       <div id="con_box4_mb_all">
+                           
+                            <div id="con_call">
+                               <figure></figure>
+                               
+                               <div class="con_txt">
+                               <h3 class="title">문의전화</h3>
+                               <strong>02-450-3664</strong>
+                               <span>(원무행정실)</span>
+                           </div><!--con_txt-->
+                           </div><!--con_call-->
+                           
+                           <div id="con_time">
+                               <figure></figure>
+                               
+                               <div class="con_txt">
+                               <h3 class="title">진료시간 안내</h3>
+                               <strong>평일 9:30 ~ 오후 17:30,   </strong>
+                               <strong>주말 9:30 ~ 오후 16:30</strong>
+                               <span>(예약진료)</span>
+                               </div>
+                               
+                               <div class="con_txt_2">
+                               <h3 class="title">진료시간 안내</h3>
+                               <strong>평일 9:30 ~<br>오후 17:30</strong> 
+                               <strong>주말 9:30 ~<br> 오후 16:30</strong><br>
+                               <span>(예약진료)</span>
+                           </div><!--con_txt2-->
+                           
+                           </div>
+                        
+                           
+                           <div id="con_24">
+                               <figure></figure>
+                               
+                               <div class="con_txt">
+                               <h3 class="title">24시 응급진료센터</h3>
+                               <strong>02-456-3664</strong>
+                              </div><!--con_txt-->
+                              
+                              <div class="con_txt_3">
+                               <h3 class="title">24시<br>응급진료<br>센터</h3>
+                               <strong>02-456-3664</strong>
+                              </div><!--con_txt-->
+                           </div><!--con_24-->
+                           
+                       </div><!--con_box4_mb_all-->
+           
+        </div><!--content//////////////////////////-->
+    
+    
+    <div th:replace="fragments/footer::footer"></div>
+    <!-- <footer>
+        <div id="footer_top">
+            <nav id="footer_info" class="row_center">
+                <ul>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이메일무단수집거부</a></li>
+                    <li class="footer_mb"><a href="#">관리자 로그인</a></li>
+                </ul>
+            </nav>
+        </div>"footer_top"
+        
+        <div id="footer_bottom">
+           <div id="footer_bm_info" class="row_center">
+           <ul>
+               <li>상호명 : 건국대학교</li>
+               <li>주소 : 서울 광진구 능동로 120 건국대학교 수의학관</li>
+               <li>전화번호:02-450-3664</li>
+               <li>대표자:전영재</li>
+               <li>사업자등록번호:207-82-00062</li>
+           </ul>
+            <p>COPTRIGHT2017~2021 ALL RIGHT RESERVED</p>
+            </div>
+            
+            <div id="footer_bm_info_mb" class="row_center">
+           <ul>
+               <li>상호명 : 건국대학교</li>
+               <li>주소 : 서울 광진구 능동로 120 건국대학교 수의학관</li>
+               <li>전화번호 : 02-450-3664</li>
+               <li>대표자:전영재</li>
+               <li>사업자등록번호 : 207-82-00062</li>
+               <li>COPTRIGHT2017~2021 ALL RIGHT RESERVED</li>
+           </ul>
+            </div>
+        </div>
+    </footer> -->
+    
+    <div id="popup">
+        <a href="#">
+        <img src="img/main/banner.gif" alt="건국대학교 배너">
+        </a>
+        
+        <div>
+        <strong>
+            <input type="checkbox" name="" id="stop" onclick="todaycloseWin()">
+            <label for="stop" class="day">오늘 그만보기</label>
+        </strong>
+        
+        <span class="pop_close">
+         닫기   
+        </span>
+        </div>
+    </div><!--popup-->
+    
+    <script language="JavaScript">
+
+        cookiedata = document.cookie;    
+
+        if ( cookiedata.indexOf("ncookie=done") < 0 ){      
+
+        document.getElementById('popup').style.display = "block"; /*0보다 작아야 보임*/
+
+        } else {
+
+        document.getElementById('popup').style.display = "block"; /*0보다 커야 안보임*/
+
+        }
+
+</script>
+    
+    <script src="dist/js/swiper.min.js"></script>
+    <script>
+     //모바일 터치 슬라이드
+        var swiper = new Swiper('.sw2', {
+      slidesPerView: 1, //보여지는 슬라이드 개수
+      spaceBetween: 20, //슬라이드 사이 공간
+      loop: true,  // 반복 슬라이드 /*true,false*/
+      keyboard: {
+        enabled: true,  //키보드 제어 /*true,false*/
+      },
+      autoplay: {
+        delay: 4000, // 4초마다 슬라이드
+        disableOnInteraction: true, //버튼 제어시 멈춤
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true, //블릿버튼 제어
+      },
+    });
+        
+     //아이콘 슬라이드
+     var swiper3 = new Swiper('.sw3', {
+      slidesPerView: 5,
+      spaceBetween: 20, /*이미지 간격*/
+      /*slidesPerGroup: 3,*/ /*한화면에 3개 슬라이드 나옴*/ /*해제하면 이미지 하나씩 넘어감*/
+      loop: false,
+      /*loopFillGroupWithBlank: false,*/ /*마지막 페이지 공백없이 할려면 false*/ /*slidesPerGroup쓸때 같이 사용*/
+      /*autoplay: {
+        delay: 4000, 자동 페이지 넘김
+      },*/
+      navigation: {
+        nextEl: '.next_2',
+        prevEl: '.prev_2',
+      },
+         //반응형 웹 해상도에 따른 슬라이드 개수 제어
+        breakpoints:{
+            
+        767:{
+            slidesPerView:4,
+            spaceBetween:15,
+        },
+       /* 585:{
+            slidesPerView:3,
+            spaceBetween:15,
+        },*/
+        
+        470:{
+            slidesPerView:3,
+            spaceBetween:15,
+        },    
+      },
+      });  
+    </script>
+</body>
+</html>

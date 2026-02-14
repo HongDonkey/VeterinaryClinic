@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+
+
+/*공지사항 스타일*/
+
+#notice_con_wrap{
+    min-height: 300px;
+    margin-top: 80px;
+}
+
+@media screen and (max-width:414px){
+    .hx.h2{
+        font-size: 12px;
+    }
+    
+}

@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <div th:insert="~{fragments/commonLink :: commonLink}"></div>
+    <script th:src="@{/js/sub6_1.js}"></script>
+    <link th:href="@{/css/sub3_1.css}" rel="stylesheet">
+    <title>진료과목-내과</title>
+
+    <!--제이쿼리 호출-->
+
+     <script>
+       $(function(){ //jQuery 시작
+
+          
+           
+      }); //jQuery 종료
+    </script>
+   
+</head>
+<body>
+     <div th:insert="~{fragments/header :: header}"></div>
+    
+    <!--서브 네비게이션-->  
+	<div th:insert="~{fragments/sub3 :: sub3}"></div>
+    
+    <!--서브 상단 제목-->
+    <div id="sub_top_t_wrap" class="row_center">
+        <h3 class="sub_top_t">일반 내과</h3>
+        
+        <div class="sub_top_box">
+           <figure><img src="img/sub/sub_common/circle.png" alt="포인트1"></figure>
+            <p>일반내과에서는 기력저하, 식욕저하, 구토, 설사 등 대부분의 질환에서 공통적으로 보이는 증상을 갖고 내원하는 환자를 대상으로 진료를 제공하고 있습니다.<br><span>주로 소화기, 비뇨기, 내분비질환을 다루며 생명을 위협하는 중증질환, 치료가 어려운 난치성질환, 장기적으로 관리가 필요한 만성질환과 같은 질병의 정확한 진단과 치료를 목표로 하고 있습니다.</span></p>
+        </div>
+    </div>
+    
+    <!--진료과목_sub3_1_content-->
+    <div id="s3_1_con_wrap" class="row_center">
+      <div id="s3_1_box1"><!--일반내과-->
+       <div class="s3_1_con_title">
+       <span><img src="img/sub/sub3_m_course/sub3_1/s3_i1.png" alt="일반내과"></span>
+       <h3>일반내과 주요질환</h3>
+       </div>
+       
+       <div class="s3_1_table1">
+       <table>
+            <tr>
+                <th><figure><img src="img/sub/sub3_m_course/sub3_1/s3_1_1.png" alt="소화기 질환"></figure></th>
+                <th>소화기 질환</th>
+                <th>
+                <ul>
+                    <li>· 염증성 장질환</li>
+                    <li>· 췌장염</li>
+                    <li>· 종양</li>
+                    <li>· 간질환</li>
+                </ul>
+                </th>
+            </tr>
+            
+            <tr>
+                <th><figure><img src="img/sub/sub3_m_course/sub3_1/s3_1_2.png" alt="비뇨기 질환"></figure></th>
+                <th>비뇨기 질환</th>
+                <th>
+                <ul>
+                    <li>· 신부전</li>
+                    <li>· 방광염</li>
+                </ul>
+                </th>
+            </tr>
+            
+            <tr>
+                <th><figure><img src="img/sub/sub3_m_course/sub3_1/s3_1_3.png" alt="내분비 질환"></figure></th>
+                <th>내분비 질환</th>
+                <th>
+                <ul>
+                    <li>· 쿠싱병</li>
+                    <li>· 당뇨</li>
+                    <li>· 갑상선질환</li>
+                </ul>
+                </th>
+            </tr>
+            
+            <tr>
+                <th><figure><img src="img/sub/sub3_m_course/sub3_1/s3_1_4.png" alt="면역매개성 질환"></figure></th>
+                <th>면역매개성 질환</th>
+                <th>
+                <ul>
+                    <li>· 면역매개성 용혈성 빈혈</li>
+                    <li>· 면역매개성 혈소판 감소증</li>
+                </ul>
+                </th>
+            </tr>
+       </table>
+       </div>
+       
+       <!--일반내과 모바일-->
+       <div class="s3_1_table1_mb">
+       <table>
+            <tr>
+                <th><figure><img src="img/sub/sub3_m_course/sub3_1/s3_1_1.png" alt="소화기 질환"></figure></th>
+           </tr>
+            <tr>
+                <th class="title_mb">소화기 질환</th>
+            </tr>
+            <tr>      
+                <th>
+                <ul>
+                    <li>· 염증성 장질환</li>
+                    <li>· 췌장염</li>
+                    <li>· 종양</li>
+                    <li>· 간질환</li>
+                </ul>
+                </th>
+            </tr> 
+            
+            <tr>
+                <th><figure><img src="img/sub/sub3_m_course/sub3_1/s3_1_2.png" alt="비뇨기 질환"></figure></th>
+            </tr>
+            <tr>       
+                <th class="title_mb">비뇨기 질환</th>
+            </tr>
+            <tr>       
+                <th>
+                <ul>
+                    <li>· 신부전</li>
+                    <li>· 방광염</li>
+                </ul>
+                </th>
+            </tr>    
+            <tr>
+                <th><figure><img src="img/sub/sub3_m_course/sub3_1/s3_1_3.png" alt="내분비 질환"></figure></th>
+           </tr>
+           <tr>       
+                <th class="title_mb">내분비 질환</th>
+           </tr>
+           <tr>       
+                <th>
+                <ul>
+                    <li>· 쿠싱병</li>
+                    <li>· 당뇨</li>
+                    <li>· 갑상선질환</li>
+                </ul>
+                </th>
+            </tr>
+            
+            <tr>
+                <th><figure><img src="img/sub/sub3_m_course/sub3_1/s3_1_4.png" alt="면역매개성 질환"></figure></th>
+           </tr>
+            <tr>       
+                <th class="title_mb">면역매개성 질환</th>
+           </tr>
+            <tr>       
+                <th class="s3_txt">
+                <ul>
+                    <li>· 면역매개성 용혈성 빈혈</li>
+                    <li>· 면역매개성 혈소판 감소증</li>
+                </ul>
+                </th>
+            </tr>
+       </table>
+       </div><!--s3_1_table1_mb-->
+       </div><!--s3_1_box1--> <!--일반내과-->
+       <!--s3_1_table1_일반내과 주요질환///-->
+       
+       
+       <!--피부 종양 내과//////-->
+       <div id="s3_1_box2">
+       <div id="sub_top_t_wrap" class="row_center">
+        <h3 class="sub_top_t2">피부·종양 내과</h3>
+        
+        <div class="sub_top_box">
+           <figure><img src="img/sub/sub_common/circle.png" alt="포인트1"></figure>
+            <p>최근 반려동물의 복지와 기대수명이 늘어남에 따라, 각종 피부병 및 종양환자가 증가하고 있습니다.<br> 본원 피부·종양팀에서는 <span>증상에 따른 피부검사 (조직검사, 세포학적 검사, 모근의 현미경학적 검사), 우드램프검사, 세균 및 곰팡이 검사를 통한 진단과 그에 따른 적절한 치료를 원칙으로 진료하고 있습니다.</span></p>
+        </div>
+    </div>
+        <div class="s3_1_con_title">
+       <span><img src="img/sub/sub3_m_course/sub3_1/s3_i2.png" alt="피부종양 질환"></span>
+       <h3>피부·종양 주요질환</h3>
+       
+       </div>
+       
+       <div class="s3_1_table2">
+       <table>
+            <tr>
+                <th><figure><img src="img/sub/sub3_m_course/sub3_1/s3_1_5.png" alt="피부 질환"></figure><h4 class="t2">피부 질환</h4></th>
+                <th>
+                <div class="b2_title">
+                <h3>증상</h3>
+                </div>
+                <div class="b2_txt">
+                <ul>
+                    <li>· 아토피</li>
+                    <li>· 면역매개성 질환</li>
+                    <li>· 귀 질환</li>
+                    <li>· 감염성 질환</li>
+                    <li>· 탈모성 질환</li>
+                </ul>
+                </div>
+                </th>
+                <th>
+                <div class="b2_title">
+                <h3>치료</h3>
+                </div>
+                <div class="b2_txt">
+                <ul>
+                    <li>· 세포학적 검사</li>
+                    <li>· 배양 검사</li>
+                    <li>· 우드등 검사</li>
+                    <li>· 감수성 검사</li>
+                    <li>· 조직 검사</li>
+                    <li>· 고막절개술</li>
+                </ul>
+                </div>
+                </th>
+            </tr>
+            
+            <tr>
+                <th><figure><img src="img/sub/sub3_m_course/sub3_1/s3_1_6.png" alt="종양 질환"></figure><h4 class="t2">종양 질환</h4></th>
+                <th>
+                <div class="b2_title">
+                <h3>증상</h3>
+                </div>
+                <div class="b2_txt">
+                <ul>
+                    <li>· 피부종양</li>
+                    <li>· 혈관림프계 종양</li>
+                    <li>· 복강 장기 종양</li>
+                </ul>
+                </div>
+                </th>
+                <th>
+                <div class="b2_title">
+                <h3>치료</h3>
+                </div>
+                <div class="b2_txt">
+                <ul>
+                    <li>· 조직 검사</li>
+                    <li>· 세침흡인 검사</li>
+                    <li>· X-ray</li>
+                    <li>· 초음파</li>
+                    <li>· CT촬영</li>
+                    <li>· 항암치료</li>
+                </ul>
+                </div>
+                </th>
+            </tr>
+        </table>
+       </div>
+       
+       
+        <div class="s3_1_table2_mb">
+       <table>
+            <tr>
+                <th><figure><img src="img/sub/sub3_m_course/sub3_1/s3_1_5.png" alt="피부 질환"></figure><h4 class="t2">피부 질환</h4></th>
+           </tr>
+           <tr>       
+                <th>
+                <div class="b2_title">
+                <h3>증상</h3>
+                </div>
+       
+                <div class="b2_txt">
+                <ul>
+                    <li>· 아토피</li>
+                    <li>· 면역매개성 질환</li>
+                    <li>· 귀 질환</li>
+                    <li>· 감염성 질환</li>
+                    <li>· 탈모성 질환</li>
+                </ul>
+                </div>
+                </th>
+             </tr>  
+             <tr>       
+                <th>
+                <div class="b2_title">
+                <h3>치료</h3>
+                </div>       
+                <div class="b2_txt">
+                <ul>
+                    <li>· 세포학적 검사</li>
+                    <li>· 배양 검사</li>
+                    <li>· 우드등 검사</li>
+                    <li>· 감수성 검사</li>
+                    <li>· 조직 검사</li>
+                    <li>· 고막절개술</li>
+                </ul>
+                </div>
+                </th>
+            </tr>
+            
+            <tr>
+                <th><figure><img src="img/sub/sub3_m_course/sub3_1/s3_1_6.png" alt="종양 질환"></figure><h4 class="t2">종양 질환</h4></th>
+           </tr>
+           <tr>       
+                <th>
+                <div class="b2_title">
+                <h3>증상</h3>
+                </div>
+                <div class="b2_txt">
+                <ul>
+                    <li>· 피부종양</li>
+                    <li>· 혈관림프계 종양</li>
+                    <li>· 복강 장기 종양</li>
+                </ul>
+                </div>
+                </th>
+            </tr>    
+            <tr>    
+                <th>
+                <div class="b2_title">
+                <h3>치료</h3>
+                </div>
+                <div class="b2_txt">
+                <ul>
+                    <li>· 조직 검사</li>
+                    <li>· 세침흡인 검사</li>
+                    <li>· X-ray</li>
+                    <li>· 초음파</li>
+                    <li>· CT촬영</li>
+                    <li>· 항암치료</li>
+                </ul>
+                </div>
+                </th>
+            </tr>
+        </table>
+       </div><!--s3_1_table2_mb-->
+       </div><!--s3_1_box2-->
+       <!--s3_1_table2_피부종양 주요질환///-->
+        
+        
+         <!--심장 내과//////-->
+       <div id="s3_1_box3">     
+       <div id="sub_top_t_wrap" class="row_center">
+        <h3 class="sub_top_t2">심장 내과</h3>
+        
+        <div class="sub_top_box">
+           <figure><img src="img/sub/sub_common/circle.png" alt="포인트1"></figure>
+            <p>반려동물의 건강 및 복지가 점차 향상되고 있고, 이에 따라 반려동물의 평균수명이 증가하면서 심장혈관계 질병의 유병률과 이로 인한 사망율 또한 증가하고 있습니다.<br> <span>이러한 심장혈관성 질병으로는 고혈압, 심부전, 판막질환 등이 있으며 건국대학교 부속동물병원에서는 이에 대한 정확한 진단과 치료를 위해 노력하고 있습니다.</span></p>
+        </div>
+       </div>
+        <div class="s3_1_con_title">
+       <span><img src="img/sub/sub3_m_course/sub3_1/s3_i3.png" alt="심장내과 질환"></span>
+       <h3>심장내과 주요질환</h3>
+       
+       </div>
+       
+       <div class="s3_1_table2">
+       <table>
+            <tr>
+                <th><figure><img src="img/sub/sub3_m_course/sub3_1/s3_1_7.png" alt="심장 질환"></figure><h4 class="t2">심장계 질환</h4></th>
+                <th>
+                <div class="b2_title">
+                <h3>증상</h3>
+                </div>
+                <div class="b2_txt">
+                <ul>
+                    <li>· 이·삼첨판 폐쇄 부전증</li>
+                    <li>· 폐수종</li>
+                    <li>· 동맥관개종증</li>
+                    <li>· 부정맥</li>
+                    <li>· 폐동맥 고혈압</li>
+                </ul>
+                </div>
+                </th>
+                <th>
+                <div class="b2_title">
+                <h3>치료</h3>
+                </div>
+                <div class="b2_txt">
+                <ul>
+                    <li>· 흉부 방사선 검사</li>
+                    <li>· 심전도 검사</li>
+                    <li>· 심장 초음파 검사</li>
+                    <li>· 혈관 조영술</li>
+                    <li>· 심장 박동기 장착</li>
+                    <li>· 동맥관개존증 폐쇄술</li>
+                </ul>
+                </div>
+                </th>
+            </tr>
+        </table>
+       </div>
+       
+       
+         <div class="s3_1_table2_mb">
+       <table>
+            <tr>
+                <th><figure><img src="img/sub/sub3_m_course/sub3_1/s3_1_7.png" alt="심장 질환"></figure><h4 class="t2">심장계 질환</h4></th>
+           </tr>
+            <tr>
+            <th>        
+                <div class="b2_title">
+                <h3>증상</h3>
+                </div>
+                <div class="b2_txt">
+                <ul>
+                    <li>· 이·삼첨판 폐쇄 부전증</li>
+                    <li>· 폐수종</li>
+                    <li>· 동맥관개종증</li>
+                    <li>· 부정맥</li>
+                    <li>· 폐동맥 고혈압</li>
+                </ul>
+                </div>
+                </th>
+           </tr>
+               <tr>
+                <th>
+                <div class="b2_title">
+                <h3>치료</h3>
+                </div>
+                <div class="b2_txt">
+                <ul>
+                    <li>· 흉부 방사선 검사</li>
+                    <li>· 심전도 검사</li>
+                    <li>· 심장 초음파 검사</li>
+                    <li>· 혈관 조영술</li>
+                    <li>· 심장 박동기 장착</li>
+                    <li>· 동맥관개존증 폐쇄술</li>
+                </ul>
+                </div>
+                </th>
+            </tr>
+        </table>
+       </div><!--s3_1_table2_mb-->
+       </div><!--s3_1_box3-->
+       <!--s3_1_table2_심장내과 주요질환///-->
+       
+       
+        <!--호흡기 내과//////-->
+        <div id="s3_1_box4">
+       <div id="sub_top_t_wrap" class="row_center">
+        <h3 class="sub_top_t2">호흡기 내과</h3>
+        
+        <div class="sub_top_box">
+           <figure><img src="img/sub/sub_common/circle.png" alt="포인트1"></figure>
+            <p>호흡기 내과는 호흡기계를 구성하는 주요장기인 기도, 폐실질, 폐혈관, 흉막 및 흉벽에 발생하는 질병들을 진단하고 치료하는 진료과입니다. 관련 주요 임상증상으로 기침, 호흡곤란, 객혈, 무기력 등이 있습니다.</p>
+        </div>
+    </div>
+        <div class="s3_1_con_title">
+       <span><img src="img/sub/sub3_m_course/sub3_1/s3_i4.png" alt="호흡기내과 질환"></span>
+       <h3>호흡기내과 주요질환</h3>
+       
+       </div>
+       
+       <div class="s3_1_table2">
+       <table>
+            <tr>
+                <th><figure><img src="img/sub/sub3_m_course/sub3_1/s3_1_8.png" alt="피부 질환"></figure><h4 class="t2">호흡기 질환</h4></th>
+                <th>
+                <div class="b2_title">
+                <h3>증상</h3>
+                </div>
+                <div class="b2_txt">
+                <ul>
+                    <li>· 폐렴</li>
+                    <li>· 기관 / 기관지염</li>
+                    <li>· 고양이 천식</li>
+                    <li>· 기관 / 기관지 협착</li>
+                </ul>
+                </div>
+                </th>
+                <th>
+                <div class="b2_title">
+                <h3>치료</h3>
+                </div>
+                <div class="b2_txt">
+                <ul>
+                    <li>· 흉부 방사선 검사</li>
+                    <li>· 관련 샘플 및 배양 검사</li>
+                    <li>· 투시 검사</li>
+                    <li>· 호흡기 종양 세포 흡인 검사</li>
+                </ul>
+                </div>
+                </th>
+            </tr>
+        </table>
+       </div>
+       
+       
+              <div class="s3_1_table2_mb">
+       <table>
+            <tr>
+                <th><figure><img src="img/sub/sub3_m_course/sub3_1/s3_1_8.png" alt="피부 질환"></figure><h4 class="t2">호흡기 질환</h4></th>
+           </tr>
+            <tr>       
+                <th>
+                <div class="b2_title">
+                <h3>증상</h3>
+                </div>
+                <div class="b2_txt">
+                <ul>
+                    <li>· 폐렴</li>
+                    <li>· 기관 / 기관지염</li>
+                    <li>· 고양이 천식</li>
+                    <li>· 기관 / 기관지 협착</li>
+                </ul>
+                </div>
+                </th>
+           </tr> 
+           <tr>      
+                <th>
+                <div class="b2_title">
+                <h3>치료</h3>
+                </div>
+                <div class="b2_txt">
+                <ul>
+                    <li>· 흉부 방사선 검사</li>
+                    <li>· 관련 샘플 및 배양 검사</li>
+                    <li>· 투시 검사</li>
+                    <li>· 호흡기 종양 세포 흡인 검사</li>
+                </ul>
+                </div>
+                </th>
+            </tr>
+        </table>
+       </div><!--s3_1_table2_mb-->
+       </div><!--s3_1_box4-->
+       <!--s3_1_table2_호흡기내과 주요질환///-->
+       
+       
+          <!--신경 내과//////-->
+       <div id="s3_1_box5">  
+       <div id="sub_top_t_wrap" class="row_center">
+        <h3 class="sub_top_t2">신경 내과</h3>
+        
+        <div class="sub_top_box">
+           <figure><img src="img/sub/sub_common/circle.png" alt="포인트1"></figure>
+            <p>신경내과는 동물의 중추신경 (뇌,척수) 과 말초신경과 관계되는 질환을 진단하고 치료하는 분야입니다.<br><span>신경계 질환은 발작, 마비, 운동장애, 치매와 같은 증상을 보일 수 있으며 최근 노령 반려동물의 증가로 각종 퇴행성 질환, 신경계 종양으로 인한 질환이 증가하고 있습니다.</span> </p>
+        </div>
+    </div>
+        <div class="s3_1_con_title">
+       <span><img src="img/sub/sub3_m_course/sub3_1/s3_i5.png" alt="심장내과 질환"></span>
+       <h3>신경내과 주요질환</h3>
+       
+       </div>
+       
+       <div class="s3_1_table2">
+       <table>
+            <tr>
+                <th><figure><img src="img/sub/sub3_m_course/sub3_1/s3_1_9.png" alt="피부 질환"></figure><h4 class="t2">신경계 질환</h4></th>
+                <th>
+                <div class="b2_title">
+                <h3>증상</h3>
+                </div>
+                <div class="b2_txt">
+                <ul>
+                    <li>· 뇌종양</li>
+                    <li>· 괴사성 뇌수막염</li>
+                    <li>· 뇌수두증</li>
+                    <li>· 말초신경병증</li>
+                    <li>· 중증근무력증</li>
+                </ul>
+                </div>
+                </th>
+                <th>
+                <div class="b2_title">
+                <h3>치료</h3>
+                </div>
+                <div class="b2_txt">
+                <ul>
+                    <li>· 신경 검사</li>
+                    <li>· 뇌척수액 검사</li>
+                    <li>· 뇌파 검사</li>
+                    <li>· 근전도 검사</li>
+                </ul>
+                </div>
+                </th>
+            </tr>
+        </table>
+       </div>
+       
+       <div class="s3_1_table2_mb">
+       <table>
+            <tr>
+                <th><figure><img src="img/sub/sub3_m_course/sub3_1/s3_1_9.png" alt="피부 질환"></figure><h4 class="t2">신경계 질환</h4></th>
+           </tr>
+            <tr>       
+                <th>
+                <div class="b2_title">
+                <h3>증상</h3>
+                </div>
+                <div class="b2_txt">
+                <ul>
+                    <li>· 뇌종양</li>
+                    <li>· 괴사성 뇌수막염</li>
+                    <li>· 뇌수두증</li>
+                    <li>· 말초신경병증</li>
+                    <li>· 중증근무력증</li>
+                </ul>
+                </div>
+                </th>
+           </tr>
+           <tr>       
+                <th>
+                <div class="b2_title">
+                <h3>치료</h3>
+                </div>
+                <div class="b2_txt">
+                <ul>
+                    <li>· 신경 검사</li>
+                    <li>· 뇌척수액 검사</li>
+                    <li>· 뇌파 검사</li>
+                    <li>· 근전도 검사</li>
+                </ul>
+                </div>
+                </th>
+            </tr>
+        </table>
+       </div><!--s3_1_table2_mb-->
+       </div><!--s3_1_box5-->
+      <!--s3_1_table2_신경내과 주요질환///--> 
+    </div><!--s3_1_con_wrap--> 
+  
+          
+           
+         
+           
+               
+        
+    <div th:replace="fragments/footer::footer"></div>
+    <!--end:footer-->
+</body>
+</html>

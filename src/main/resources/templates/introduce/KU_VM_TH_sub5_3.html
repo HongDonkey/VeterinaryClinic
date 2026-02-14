@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<div th:insert="~{fragments/commonLink :: commonLink}"></div>
+	<script th:src="@{/js/sub5_3.js}"></script>
+	<link th:href="@{/css/sub5_3.css}" rel="stylesheet">    
+	
+    <title>오시는 길</title>
+
+</head>
+<body>
+
+    <div th:insert="~{fragments/header :: header}"></div>
+          
+    <!--서브 네비게이션-->  
+ 	<div th:insert="~{fragments/sub5 :: sub5}"></div>
+    
+    <!--서브 상단 제목-->
+    <div id="sub_top_t_wrap" class="row_center">
+        <h3 class="sub_top_t">오시는 길</h3>
+        
+        <div class="sub_top_box">
+           <figure><img src="img/sub/sub_common/circle.png" alt="포인트1"></figure>
+            <p>건국대학교 부속동물병원으로 찾아오시는 다양한 방법을 알려드립니다.</p>
+        </div>
+    </div>
+    
+    
+    <!--오시는길_sub5_3_content////////////////////////-->
+    <div id="s5_3_con_wrap" class="row_center">
+       <div id="container">
+        <ul class="tab"> <!--탭버튼-->
+            <li><a href="#" id="tab-map">약도 및 주소안내</a></li>
+            <li><a href="#" id="tab-how">오시는 방법</a></li>
+        </ul>
+        </div><!--container-->
+     
+     <!--약도 및 주소안내/////////-->
+     <div id="s5_3_all">
+     <div id="s5_map_wrap"> 
+     <div id="s5_map_t">
+         <h3 class="map_t"><span><img src="img/sub/sub5_intro/sub5_3/s5_1.png" alt="약도 아이콘"></span>약도</h3>
+     </div>   
+    
+    <div id="map" style="width:100%;height:400px;"></div>
+    
+    <div class="s5_map_btn">
+        <ul>
+            <li><a href="https://map.kakao.com/link/map/ Konkuk University Animal Hospital, 37.53921843188085,127.07473196528314" target="_blank">자세히 보기</a></li><!--/건국대학교 부속동물병원,37.53921843188085,127.07473196528314-->
+            <li><a href="https://map.kakao.com/link/to/ Konkuk University Animal Hospital, 37.53921843188085,127.07473196528314" target="_blank">빠른길 찾기</a></li>
+        </ul>
+    </div><!--s5_map_btn-->
+    
+    <div class="s5_ad">
+         <h3 class="map_t"><span><img src="img/sub/sub5_intro/sub5_3/s5_2.png" alt="주소 아이콘"></span>주소</h3>
+         
+         <div class="ad_box">
+             <p><strong>서울 광진구 능동로 120-1 건국대학교 수의학관 1층 건국대학교 부속동물병원</strong><span>전화 : 02-450-3664</span></p>
+         </div>
+     </div>     
+    
+    </div><!--s5_map_wrap///////////////-->
+    
+    <!--오시는 방법//////////-->
+    <div id="s5_how_wrap">
+       <div class="how_box1">
+           <h3 class="map_t"><span><img src="img/sub/sub5_intro/sub5_3/s5_3.png" alt="지하철 아이콘"></span>지하철</h3>
+           
+           <div class="how_box">
+              <ul>
+                  <li class="box1_1"><!--1-->
+                  <h3><strong class="sub">2호선</strong>건대입구역</h3>
+                      <div class="box_txt">
+                      <ul>
+                          <li>
+                           <div><span>②</span>번 출구</div>
+                           <div class="jm">(4번 출구 이용 시 편리)</div>
+                          </li>
+                          <li>횡단보도 건너 도보 약 6분</li>
+                      </ul>
+                      <div class="box_pt">
+                          <span class="pt_c1"></span><span class="line"></span><span class="pt_c2"></span>
+                      </div>
+                      </div>
+                  </li>
+                  
+                  <li class="box1_2"><!--2-->
+                  <h3><strong>7호선</strong>건대입구역</h3>
+                  <div class="box_txt">
+                      <ul>
+                          <li>
+                           <div class="jjm"><span>④</span>번 출구</div>
+                          </li>
+                          <li>횡단보도 건너 도보 약 5분</li>
+                      </ul>
+                      <div class="box_pt">
+                          <span class="pt_c1"></span><span class="line"></span><span class="pt_c2"></span>
+                      </div>
+                      </div>
+                  </li>
+                  
+                  <li class="box1_3"><!--3-->
+                  <h3><strong>7호선</strong>어린이대공원역</h3>
+                  <div class="box_txt">
+                      <ul>
+                          <li>
+                           <div class="jjm"><span>③</span>번 출구</div>
+                          </li>
+                          <li>도보 약 20분</li>
+                          <li>
+                          <span class="jm">&#40;산책로 추천&#41;</span>
+                          </li>
+                     </ul>
+                     <div class="box_pt">
+                          <span class="pt_c1"></span><span class="line"></span><span class="pt_c3"></span>
+                      </div>
+                      </div>
+                  </li>
+               </ul> 
+           </div>
+        </div><!--how_box1//////////-->
+        
+        <div class="how_box2">
+           <h3 class="map_t"><span><img src="img/sub/sub5_intro/sub5_3/s5_4.png" alt="지하철 아이콘"></span>버스</h3>
+           
+           <div class="how_box">
+              <ul>
+                  <li class="box2_1">
+                  <h3><strong>2호선</strong>건대입구역</h3>
+                  <div class="box_txt">
+                  <ul>
+                  <li><span>B</span>240, 721</li>
+                  <li><span>B</span>2222, 2223, 2224</li>
+                  <li>건국대학교에서 하차</li>
+                  </ul>
+                  </div>
+                  </li>
+                  
+                  <li class="box2_2">
+                  <h3>수의대 부속동물병원</h3>
+                  <div class="box_txt">
+                  <ul>
+                  <li><span>B</span>2223, 2224, 3220</li>
+                  <li>건국대학교에서 하차</li>
+                  </ul>
+                  </div>
+                  </li>
+                  
+                  <li class="box2_3">
+                  <h3><strong>7호선</strong>건대입구역</h3>
+                  <div class="box_txt">
+                  <ul>
+                  <li><span>B</span>240, 721</li>
+                  <li><span>B</span>2222, 2223, 2224</li>
+                  <li>건국대학교에서 하차</li>
+                  </ul>
+                  </div>
+                  </li>
+              </ul> 
+           </div>
+        </div><!--how_box2-->
+        
+         <div class="how_box3">
+           <h3 class="map_t"><span><img src="img/sub/sub5_intro/sub5_3/s5_5.png" alt="지하철 아이콘"></span>자가용</h3>
+           
+           <div class="how_box">
+              <ul>
+                  <li class="box3_1">
+                  <h3>경부고속도로</h3>
+                  <div class="box3_txt">
+                  <ul>
+                  <li>서울톨게이트를 지나 한남IC에서 올림픽대로를 이용</li>
+                  <li>영동대교를 건너 성수사거리 우회전 후<br>2호선 건대입구역 방향 직진</li>
+                  <li>건국대학교 일감문 우측 첫번째 건물</li>
+                  <li>건국대학교 부속동물병원 도착</li>
+                  </ul>
+                  <div class="box3_pt">
+                          <span class="pt_c1"></span><span class="line1"></span><span class="pt_c2"></span>
+                      </div>
+                  </div>
+                  </li>
+                  
+                  <li class="box3_2">
+                  <h3>중부고속도로</h3>
+                  <div class="box3_txt">
+                  <ul>
+                  <li>동서울톨게이트를 지나 구리-판교간 고속도로를 이용</li>
+                  <li>상일IC에서 올림픽대로를 이용 잠실대교 방향으로 직진</li>
+                  <li>지하철 2호선 건대입구역 또는 구의역 방향으로 직진</li>
+                  <li>건국대학교 일감문 우측 첫번쨰 건물</li>
+                  <li>건국대학교 부속동물병원 도착</li>
+                  </ul>
+                  <div class="box3_pt">
+                          <span class="pt_c1"></span><span class="line2"></span><span class="pt_c2"></span>
+                      </div>
+                  </div>
+                  </li>
+              </ul> 
+           </div>
+        </div><!--how_box3-->
+        
+        <div class="how_box4">
+           <h3 class="map_t"><span><img src="img/sub/sub5_intro/sub5_3/s5_6.png" alt="지하철 아이콘"></span>주차장</h3>
+           
+           <div class="how_box02">
+              <ul>
+                  <li class="box4_1">
+                  <h3>지하주차장<span>(건대병원 주차장 이용불가)</span></h3>
+                  <span>상허연구관, 법대, 생명환경과학대, 산학협동관, 동물생명과학대학</span>
+                  </li>
+                  
+                  <li class="box4_1">
+                  <h3>지상주차장<span>(건대병원 주차장 이용불가)</span></h3>
+                  <span>교내 도로상의 주차지정구역</span>
+                  </li>
+                  
+                  <li class="box4_1">
+                  <h3>※주차요금<span>(주차요금 진료시 주차권 지급)</span></h3>
+                  <span>일반-3,000원 (10분당 500원추가)</span>
+                  </li>
+              </ul> 
+           </div>
+        </div><!--how_box4-->
+        
+        
+        
+    </div><!--s5_how_wrap-->       
+            
+    </div><!--s5_3_con_wrap--> 
+    </div><!--s5_3_all-->    
+          
+           
+         
+           
+               
+        
+   <div th:replace="fragments/footer::footer"></div>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=7c6c22f6731f3751aec2f1ab30e544f0"></script>
+<script>
+let mapInitialized = false;
+
+$(function () {
+
+    initKakaoMap();
+
+    $('#tab-map').on('click', function (e) {
+        e.preventDefault();
+        $('#s5_map_wrap').show();
+        $('#s5_how_wrap').hide();
+    });
+
+    $('#tab-how').on('click', function (e) {
+        e.preventDefault();
+        $('#s5_map_wrap').hide();
+        $('#s5_how_wrap').show();
+    });
+});
+
+function initKakaoMap() {
+    if (mapInitialized) return;
+    mapInitialized = true;
+
+
+    kakao.maps.load(function () {
+
+        const mapContainer = document.getElementById("map");
+
+        const center = new kakao.maps.LatLng(
+            37.53921843188085,
+            127.07473196528314
+        );
+
+        const map = new kakao.maps.Map(mapContainer, {
+            center: center,
+            level: 3
+        });
+
+        const marker = new kakao.maps.Marker({
+            position: center
+        });
+        marker.setMap(map);
+        
+        const iwContent =
+            '<div style="padding:5px;text-align:center;">건국대학교 부속동물병원<br>☎ 02-450-3664</div>';
+
+        const infowindow = new kakao.maps.InfoWindow({
+            content: iwContent
+        });
+
+        infowindow.open(map, marker);
+
+        // display:none 이슈 대비
+        setTimeout(() => {
+            map.relayout();
+            map.setCenter(center);
+        }, 0);
+    });
+    
+
+ };
+</script>
+</body>
+</html>

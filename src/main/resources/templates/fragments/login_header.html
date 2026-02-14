@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>건국대학교 부속동물병원</title>
+   <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <script src="js/jquery-3.6.0.min.js"></script> <!--제이쿼리 호출-->
+    <script src="js/header_animate.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script> 
+    <script src="js/today_close.js"></script> 
+   
+    
+    
+    
+     <script>
+       $(function(){ //jQuery 시작
+
+          
+           
+      }); //jQuery 종료
+    </script>
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/ku_common.css">
+    <link rel="stylesheet" href="dist/css/swiper.min.css">
+    <link rel="stylesheet" href="css/ku_main.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     <link rel="shortcut icon" href="img/main/site_favicon_02.png"/><!--파비콘-->
+   <script src="js/main_slide.js"></script>
+</head>
+<body>
+    
+    <header th:fragment="login_header">
+        <div id="header_top" class="row_center">
+           <h1 id="logo">
+           <a th:href="@{/}">
+           <img src="img/main/main_logo.png" alt="건국대학교 부속동물병원"></a>
+           </h1><!--로고-->       
+           </div><!--header_top-->
+                      
+           <!-- 모바일 메뉴영역 -->
+               <div id="mb_top_wrap">
+                <div id="mb_top">
+                   <h1 id="mb_logo">
+                   <a href="KU_VM_TH_main.html">
+                   <img src="img/main/images/mb_logo_03.png" alt="건국대학교 부속동물병원"></a>
+                   </h1>
+                   
+                   <div id="mb_menu_icon">
+                   <span class="material-icons">menu</span>
+                   </div><!--m_menu-->
+                   
+                   <div id="mb_menu"><!--sub menu-->
+                       <div id="mb_menu_top">
+                       <h1 id="mb_menu_logo">
+                       <a href="KU_VM_TH_main.html">
+                       <img src="img/main/images/mb_logo_03.png" alt= "건국대학교 부속동물병원"></a>
+                       </h1>
+                       
+                        <div id="close_icon">
+                            <span class="material-icons">close</span>
+                        </div> 
+                        
+                        <ul class="mb_menu_text">
+                            <li>오늘도 행복한 하루 되세요!</li>
+                        </ul>
+                        
+                        <div id="mb_menu_top_icon">
+                            <div id="mb_menu_login">
+                               <a href="prototype_login.html"><span class="material-icons">
+                                person</span><p>로그인</p></a>
+                            </div><!--mb_menu_login-->
+                            
+                            <div id="mb_menu_join">
+                               <a href="#"><span class="material-icons">
+                                   border_color</span><p>회원가입</p></a>
+                            </div><!--mb_menu_join-->
+                        </div><!--mb_menu_top_icon-->
+                       
+                       </div><!--mb_menu_top-->
+                       
+                       <div id="mb_menu_content">
+                           <div id="mb_menu_cont_box">
+                              <ul>
+                                  <li><a href="KU_VM_TH_sub1_1.html">
+                                  <span></span>
+                                  <span>
+                                      진료일정 안내
+                                  </span>
+                                  </a></li>
+                                  <li><a href="KU_VM_TH_sub1_2.html"><span></span>
+                                  <span>진료예약</span></a></li>
+                                  <li><a href="KU_VM_TH_sub5_3.html"><span></span><span>오시는 길</span></a></li>
+                              </ul> 
+                           </div>
+                       </div><!--mb_menu_content-->
+                       
+                       <div id="mb_menu_gnb_wrap">
+                           <div id="mb_menu_gnb">
+                               <!--모바일 메뉴 복제-->
+                           </div><!--mb_menu_gnb-->
+                       </div><!--mb_menu_gnb_wrap-->
+                       
+                       <div id="mb_menu_sub_wrap">
+                           <div id="mb_menu_sub">
+                               
+                           </div>
+                       </div><!--mb_menu_sub_wrap-->
+                       
+                   </div><!--mb_menu-->
+               
+               </div><!--mb_top-->
+               </div><!--mb_top_wrap-->
+        </header><!--end:header-->
+        </body><!-- end:body -->
+        </html>

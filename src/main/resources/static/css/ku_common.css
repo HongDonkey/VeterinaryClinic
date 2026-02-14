@@ -1,0 +1,519 @@
+@charset "utf-8";
+
+.row_center{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+
+/*header style///////////////////*/
+#logo{
+    margin-top: 30px;
+    text-align: center;
+}
+#header_right{
+    overflow: hidden;
+    margin-top: 20px;
+}
+#header_right ul{
+   float:right;
+}
+#header_right ul li{
+    margin: 0 3px;
+    float: left;
+}
+#header_right ul li a{
+    display: block;
+    border: 1px solid #939598;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 3px 5px;
+}
+#header_right ul li:hover a{
+    color: #fff;
+    background: #464547;
+     border: 1px solid #464547;
+}
+
+
+
+/*PC 네비게이션 style///////////////////*/
+#gnb{ /*100%_선*/
+    border-top: 1px solid #939598;
+    border-bottom: 1px solid #50b748;
+    margin-top: 30px;
+    height: 50px;
+    position: relative;
+}
+#navi > ul  > li{
+    float: left;
+    width: 16.66%;
+    position: relative;
+   
+}
+#navi > ul  > li > a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+#navi > ul  > li > a > span{ /*대메뉴 글자*/
+    position: relative;
+    padding-bottom: 5px;
+    
+}
+
+#navi > ul  > li > a > span strong{ /*대메뉴 오버효과*/
+    position: absolute;
+    bottom: -5px;
+    width: 110%; 
+    left: -5%;
+    height: 5px;
+    background: #7c7c7c;
+    border-radius: 6px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease-out; /*점점느리게*/
+}
+#navi > ul:hover > li > a > span strong{
+    transform: scaleX(1); /*=100%*/
+}
+#navi > ul  > li > a > span strong::after{
+    content: '';
+    display: block;
+    height: 5px;
+    border-radius: 20px;
+    width:100%;
+}
+#navi > ul  > li:hover > a > span strong::after{ 
+    /*대메뉴 오버시 효과*/
+     
+     background: linear-gradient(to right, #50b748 0%,#0c80ae 100%);
+
+}
+#navi > ul  li .navi_sec{ /*네비게이션-소메뉴_내용*/
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    left: 0;
+    height: 250px;
+    z-index: 101;
+    overflow: hidden;
+    display: none;
+}
+
+#navi > ul  li .navi_sec ul{ /*네비게이션-소메뉴*/
+    padding-top: 10px;
+    height: 250px;
+    
+    
+}
+#navi > ul  li:nth-child(1) .navi_sec ul{
+       margin-left: 10%;
+}
+#navi > ul  li:nth-child(2) .navi_sec ul{
+       margin-left: 23%;
+}
+#navi > ul  li:nth-child(3) .navi_sec ul{
+       margin-left: 25%;
+}
+#navi > ul  li:nth-child(4) .navi_sec ul{
+       margin-left: 29.2%;
+}
+#navi > ul  li:nth-child(5) .navi_sec ul{
+       margin-left: 25%;
+}
+#navi > ul  li:nth-child(6) .navi_sec ul{
+       margin-left: 25%;
+       
+}
+#navi > ul  li .navi_sec ul a{
+    display: block;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+#navi > ul  li .navi_sec ul a:hover{
+    color: #50b748;
+}
+
+#navi_bg{ /*네비게이션-소메뉴_배경*/
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    left: 0;
+    height: 250px;
+    background: #fff;
+    z-index: 100;
+    border-bottom: 1px solid #50b748;
+    display: none;
+}
+
+#mb_logo, #mb_menu_icon, #mb_menu{ 
+    /*모바일관련내용_none*/
+    display: none;
+}
+
+
+/*footer style///////////////////*/
+#footer_top{
+    border-top: 1px solid #50b748;
+    margin-top: 120px;
+}
+#footer_info ul{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 30px;
+}
+#footer_info ul li{
+    margin-left: 50px;
+}
+
+#footer_info ul li a{
+    font-weight: bold;
+    display: block;
+    line-height: 30px;
+    font-size: 13px;
+}
+#footer_info ul li:hover a{
+    color: #50b748;
+}
+#footer_bottom{
+    background: #409b39;
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+    
+}
+#footer_bm_info ul{
+    display: flex;
+    justify-content: center
+    
+}
+#footer_bm_info ul li {
+    color: #fff;
+    position: relative;
+    font-size: 13.3px;
+    font-weight: bold;
+    padding: 7px;
+    display: inline-block;
+}
+#footer_bm_info ul li::after{
+    position: absolute;
+    content: '';
+    top: 11px;
+    right: 0;
+    height: 12px;
+    border-right: 1px solid #fff;
+    
+}
+#footer_bm_info ul li:last-child::after{
+    border-right: none;
+}
+#mb_menu{  /*모바일 전체메뉴 창*/
+       display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 105;
+        background: #fff;
+        position: fixed;
+        right: -100%;
+        top: 0;
+    }
+#footer_bm_info_mb{
+    display: none;
+}
+
+/* 반응형 스타일 ///////////////////*/
+
+/*footer 하단내용 사이즈*/
+@media screen and (max-width:892px){
+    #footer_bm_info ul{
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width:768px){
+  #logo, #header_right, #navi > ul , #gnb{
+     display: none;
+}
+    #mb_top{
+        position: relative;
+        height: 60px;
+        background: #409b39;
+    }
+    
+    #mb_logo, #mb_menu_icon{
+        display: block;
+        position: absolute;
+        top:10px;
+    }
+    #mb_logo{
+        left: 10px;
+    }
+    #mb_menu_icon{
+        right: 10px;
+        color: #fff;
+        cursor: pointer;
+    }
+    #mb_menu_icon .material-icons{
+        font-size: 3em;
+    }
+
+    
+
+    #mb_menu_top{  /*로고,clos 아이콘 영역*/
+        height: 130px;
+        background: #409b39;
+        
+    }
+    #mb_menu_logo, #close_icon{
+        display: block;
+        position: absolute;
+        top:10px;
+    } 
+    #mb_menu_logo{
+        left: 10px;
+    }
+    #close_icon{
+        position: absolute;
+        right: 10px;
+        color: #fff;
+        cursor: pointer;
+    }
+    #close_icon .material-icons{
+        font-size: 2.5em;
+        margin-top: -7.5px;
+    }
+    .mb_menu_text{
+        position: absolute;
+        display: block;
+        text-indent: 10px;
+        top: 80px;
+        font-size: 1.35em;
+        color: #fff;
+        font-weight: bold;
+    }
+    #mb_menu_top_icon{ /*로그인,회원가입 영역*/
+        display: block;
+        position: absolute;
+        display: flex;
+        right: 20px;
+        top: 65px;
+    }
+    #mb_menu_login a , #mb_menu_join a{
+        color: #fff;
+        text-align: center;
+        display: block;
+    }
+    #mb_menu_login .material-icons{
+        font-size: 2.5em;
+        margin-top: -2.5px;
+        
+    }
+   #mb_menu_join .material-icons{
+        font-size: 2em;
+    }
+    #mb_menu_login p, #mb_menu_join p{
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+    #mb_menu_login p{
+        margin-top: -5px;
+    }
+    #mb_menu_login{
+        margin-right: 30px;
+    }
+    
+    #mb_menu_content{ /*진료일정,예약,오시는길 영역*/
+        height: 100px;
+        top: 0px;
+        background: #fff;
+        border-bottom: 2px solid #409b39;
+        position: relative;
+    }
+    #mb_menu_cont_box ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    #mb_menu_cont_box ul li{
+        flex-grow: 1;
+        text-align: center;
+    }
+    #mb_menu_cont_box ul li a{
+        display: block;
+        font-weight: bold;
+        padding-top: 10px;
+        text-align: center;
+   }
+    #mb_menu_cont_box ul li a span:last-child{
+        display: block;
+    }
+    #mb_menu_cont_box ul li a span:first-child{
+        background: url(../img/main/images/mb_c_icon.png)  0 0 no-repeat;
+        width: 60px;
+        height: 50px;
+        display: inline-block;
+    }
+    #mb_menu_cont_box ul li:nth-child(1) a span:first-child{
+        background-position: 6px 4px;
+        
+    }
+    #mb_menu_cont_box ul li:nth-child(2) a span:first-child{
+        background-position: -52px 0;
+    }
+    #mb_menu_cont_box ul li:nth-child(3) a span:first-child{
+        background-position: -108px 4px;
+    }
+    #mb_menu_cont_box li a::after{ /*가상요소*/
+    content:'';
+    display: block;
+    position: absolute;
+    height: 50px;
+    border-left: 1px solid #aaa;
+    top: 25px;   
+    }
+    
+    #mb_menu_cont_box li:first-child a::after{
+        border-left: none;
+    }
+    
+    #mb_menu_gnb_wrap{ /*모바일 네비게이션 전체 영역*/
+            display: block;
+            background: #eee;
+            width: 100%;
+           height: calc(100% - 232px);
+            position: relative;
+           
+        }
+    #mb_menu_gnb{ /*모바일 대메뉴 영역*/
+        display: block;
+        text-indent: 30px;
+        width: 35%;
+        font-size: 15px;
+        font-weight: bold;
+        float: left;
+    }
+    
+    #mb_menu_gnb > ul > li > a{
+        display: block;
+        height: 50px;
+        line-height: 50px;
+    }
+     #mb_menu_gnb .navi_sec{ /* 모바일 소메뉴 영역*/
+        position: absolute;
+        width: 65%;
+        z-index: 105;
+        display: none;
+        top: 0;
+        right: 0;
+        
+    }
+    #mb_menu_sub{ /*소메뉴 배경 영역*/
+        display: block;
+        background: #fff;
+        width: 65%;
+        height: 100%;
+        top: 233px;
+        right: 0;
+        position: absolute;
+    }
+     #mb_menu_gnb > ul > li > a.selected{
+        background: #fff;
+        color: #409b39;
+        
+    }
+    #mb_menu_gnb .navi_sec ul li a:hover{
+        color: #409b39;
+    }
+   
+    /*모바일 네비게이션 처음 화면*/
+    #mb_menu_gnb > ul > li:first-child .navi_sec{
+        display: block;
+        
+    }
+    #mb_menu_gnb .navi_sec ul li a{
+        display: block;
+        height: 50px;
+        line-height: 50px;
+    }
+    #footer_top{
+        overflow: hidden;
+    }
+    
+    
+}/* 모바일 : 0 - 768px ////////////////*/
+
+
+@media screen and (max-width:400px){
+    #mb_menu_gnb{
+        text-indent: 10px;
+    }
+    .mb_menu_text > li{
+        font-size: 0.8em;
+    }
+    
+    #mb_menu_login p, #mb_menu_join p{
+        font-size: 0.8em;
+    }
+    
+    #mb_menu_gnb .navi_sec ul li{
+        text-indent: 30px;
+    }
+   /* #footer_info ul{
+        flex-wrap: wrap;
+        height: 60px;
+        width: 80%;
+    }*/
+
+}/* 모바일 : 0 - 400px ////////////////*/
+
+
+@media screen and (max-width:766px){
+#footer_top{
+    border-top: 1px solid #50b748;
+    margin-top: 50px;
+}
+}
+
+@media screen and (max-width:580px){ /*footer 하단 모바일*/
+    #footer_info ul{
+        justify-content: flex-start;
+        margin-left: -30px;    
+    }
+    #footer_info ul li{
+        margin-left: 45px;
+        
+    }
+    #footer_bm_info ul{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+    }
+    #footer_bm_info, footer_top{
+        display: none
+    }
+    #footer_bm_info_mb, #footer_top_mb{
+        display: block;
+    }
+    #footer_bm_info_mb ul{
+         text-align: left;
+       
+    }
+    #footer_bm_info_mb ul li{
+        display: inline-block;
+        padding: 5px;
+       
+    }
+    .footer_mb{
+        display: none;
+    }
+}
+

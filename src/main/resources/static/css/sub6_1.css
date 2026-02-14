@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+
+
+/*반려동물 건강정보 프로그램 스타일*/
+#s6_1_con1 ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+     
+    
+}
+#s6_1_con1 ul li{
+    width: 48%;
+    margin-bottom: 60px;
+    overflow: hidden; 
+    
+    
+}
+#s6_1_con1 ul li div.img_txt{
+    max-width: 468px;
+    margin: 30px  auto;
+    border: 1px solid #939598;
+    padding: 20px;
+    
+}
+#s6_1_con1 ul li .trans{
+    overflow: hidden;
+}
+#s6_1_con1 ul li img{
+    width: 100%;
+    transition: all 0.3s;
+    vertical-align: top;
+    
+}
+#s6_1_con1 ul li img:hover{
+     transform: scale(1.06, 1.06);
+}
+#s6_1_con1 .description{
+   padding-top: 10px; 
+    
+    
+}
+#s6_1_con1 .description strong{
+    display: inline-block;
+    font-size: 1.2em;
+    width: calc(100% - 70px);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+}
+#s6_1_con1 .description time{
+    display: block;
+}
+
+#s6_1_btn, #s6_2_btn{
+   text-align: center;
+    
+}
+#s6_1_btn span, #s6_2_btn span{
+    display: inline-block;
+    
+}
+#s6_1_btn a, #s6_2_btn a{
+    text-align: center;
+    display: block;
+    border-radius: 6px;
+    padding: 20px 60px;
+     display: block;
+     color: #fff;
+     background: #509d48;
+     font-size: 1.3em;
+    font-weight: bold;
+     
+}
+#s6_1_btn a:hover, #s6_2_btn a:hover{
+    background: linear-gradient(to right, #509d48,#0c80ae 100%);
+}
+
+@media screen and (max-width:767px){
+    /*컨텐츠 이미지*/
+    #s6_1_con1 ul{
+         display: block; /*flex 해제*/
+    }
+    #s6_1_con1 ul li{
+        width: 100%;
+    }
+    #s6_1_con1 ul li div.img_txt{
+        width: 80%;
+        margin: 0 auto;
+    }
+    #s6_1_con1 ul li img{
+        max-width: 600px;
+        width: 100%;
+    }
+    
+}/* 0 - 767px */
+
+/*서브 네비게이션 떨어지는 위치///////*/
+@media screen and (max-width:481px){
+    #s6_1_btn a{
+    padding: 15px 40px;
+     font-size: 1.2em;
+
+     
+}
+}

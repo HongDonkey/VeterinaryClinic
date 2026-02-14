@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+
+</head>
+<body>
+	<header th:fragment="sub4">
+	  <!--서브 대메뉴 배경-->
+    <!--서브 대메뉴 배경-->
+    <div id="con_sub6_1_top_bg">
+         <div id="sub6_1_top_bg"><img src="img/sub/sub4_dr/sub4_1/sub4_img1.png" alt="의료진">
+         <h3>의료진</h3>
+         </div><!--sub_img-->
+    </div><!--con_sub6_1_top_bg--> <!--상단이미지-->
+    <div id="con_sub_navi_wrap">
+        <div id="con_sub_navi_wrap_2">   
+        <div id="con_sub_navi" class="row_center">
+          
+           <div class="home">
+					<a th:href="@{/}">홈</a>
+			</div>
+           
+           <!--<nav class="gnb_navi">-->
+           <ul>
+               <li>
+                   <a>진료과목
+                   <div class="arrow_btn">
+                       <span class="material-icons">expand_more</span>
+                   </div>
+                   </a>
+					<div class="con_navi_sec">
+						<ul>
+							<li><a th:href="@{/notice_schd}"><span>일정/예약/조회<strong></strong></span></a>
+							<li><a th:href="@{/reception}"><span>진료안내<strong></strong></span></a>
+							<li><a th:href="@{/internal}"><span>진료과목<strong></strong></span></a>
+							<li><a th:href="@{/internalTeam}"><span>의료진<strong></strong></span></a>
+							<li><a th:href="@{/history}"><span>병원소개<strong></strong></span></a>
+							<li><a th:href="@{/healthInfo}"><span>프로그램<strong></strong></span></a>
+						</ul>
+					</div>
+               </li>
+            <!-- </nav>gnb_navi-->
+           
+            <!--<nav class="sub_navi">-->
+               <li>
+                   <a>내과
+                   <div class="arrow_btn">
+                       <span class="material-icons">expand_more</span>
+                   </div>
+                   </a>
+                   <div class="con_navi_sec">
+                    <ul>
+                    	<li><a th:href="@{/internalTeam}">내과</a></li>
+                    	<li><a th:href="@{/surgicalTeam}">외과</a></li>
+                    	<li><a th:href="@{/ophthTeam}">안과</a></li>
+                    	<li><a th:href="@{/radiologyTeam}">영상의학과</a></li>
+                    	<li><a th:href="@{/radiologyTeam}">임상병리과</a></li>
+                    	<li><a th:href="@{/criticalTeam}">응급중환자의학과</a></li>
+                        
+                    </ul>   
+                   </div>
+               </li>
+           </ul>
+           <!--</nav>sub_navi-->
+       
+        </div><!--sub_navi-->
+        </div>
+    </div><!--sub_navi_wrap//////////////////-->
+	</header>
+</body>
+</html>

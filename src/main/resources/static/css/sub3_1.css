@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+
+
+/*진료과목-내과 스타일*/
+.sub_top_box span{
+    color: #509d48;
+}
+/*진료과목 타이틀 스타일*/
+.s3_1_con_title span img{
+    display: inline-block;
+    vertical-align: middle;
+}
+.s3_1_con_title > h3{
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 20px;
+    vertical-align: middle; /*글자를 묶고 있는곳에도 똑같이 적용*/
+}
+#sub_top_t_wrap h3.sub_top_t2{
+    margin: 150px 0 50px;
+    display: block;
+    font-size: 2em;
+    text-align: center;
+}
+
+
+/*테이블 스타일*/
+.s3_1_table1_mb, .s3_1_table2_mb{
+    display: none;
+}
+.s3_1_table1, .s3_1_table2,.s3_1_table1_mb, .s3_1_table2_mb{
+    width: 100%;
+    margin-top: 20px;
+    border-left: none;
+    
+}
+.s3_1_table1 table, .s3_1_table2 table, .s3_1_table1_mb table, .s3_1_table2_mb table{
+     border-collapse: collapse;
+     border-top: 3px solid #509d48;
+     border-bottom: 3px solid #509d48;
+     width: 100%;
+}
+th{
+    border: 1px solid #509d48;
+    padding: 20px;
+    border-left: none;
+       
+}
+.s3_1_table1 table th:last-child{
+    border-right: none;
+    width: 50%;
+}
+.s3_1_table1 th:nth-child(2){
+    font-size: 20px;
+}
+.s3_1_table1 th:nth-child(3){
+    font-size: 16px;
+}
+.s3_1_table1 th:nth-child(3) ul{
+     display: flex;
+     flex-wrap: wrap;
+     
+}
+.s3_1_table1 th:nth-child(3) ul li{
+    padding: 0 30px 10px;
+     
+}
+.s3_1_table1 table tr:nth-child(2), .s3_1_table1 table tr:nth-child(4){
+    background: #def1f8; 
+}
+
+/*피부종양 주요질환///////*/
+.s3_1_table2 table h4{
+    padding-top: 10px;
+    font-size: 16px;
+}
+.s3_1_table2 th:nth-child(2), .s3_1_table2 th:last-child{
+    width: 38%;
+}
+.b2_title{
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.b2_title h3{ /*증상,치료 텍스트*/
+    display: block;
+    font-size: 18px;
+    color: #509d48;
+    float: left;
+}
+.b2_txt{
+    font-size: 15px;
+}
+.b2_txt ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.b2_txt ul li{
+    margin-right: 40px;
+    margin-bottom: 10px;
+    
+}
+.s3_1_table2 table th:nth-child(2) ul li{
+   
+   
+}
+.s3_1_table2 table th:last-child{
+    border-right: none;
+    
+}
+
+
+/*반응형 스타일///////////*/
+@media screen and (max-width:767px){
+    #s3_1_con_wrap{
+        width: 90%;
+    }
+    
+}/* 0-767px */
+
+
+@media screen and (max-width:675px){
+    .s3_1_table1, .s3_1_table2{
+       display: none;
+    }
+    .s3_1_table1_mb, .s3_1_table2_mb{
+        display: block;
+        width: 100%;
+    }
+    .s3_1_table1_mb table th.title_mb{
+        font-size: 17px;
+    }
+    .s3_1_table1_mb table th:last-child, .s3_1_table2_mb table th:last-child{
+        border-right: none;
+    }
+    /*모바일 표 배경색*/
+    .s3_1_table1_mb table tr:nth-child(3n+1), 
+    #s3_1_box2 > .s3_1_table2_mb > table tr:nth-child(1),
+    #s3_1_box2 > .s3_1_table2_mb > table tr:nth-child(4),
+    .s3_1_table2_mb table tr:nth-child(1){
+      background: #def1f8; 
+    }
+    
+    .s3_1_table1_mb tr th ul{
+        display: flex;
+        justify-content: space-around;
+    }
+}/* 0-675px */
+
+
+@media screen and (max-width:414px){
+    .s3_1_table1_mb table th.s3_txt ul {
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    .s3_1_table1_mb table th.s3_txt ul li{
+        display: block;
+    }
+    .s3_1_table1_mb table th.s3_txt ul li:last-child{
+        margin-top: 10px;
+    }
+}

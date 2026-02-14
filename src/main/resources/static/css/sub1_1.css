@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+
+
+/*진료일정 안내 스타일*/
+.s1_1_con_wrap .container{
+    margin-bottom: 80px;
+} 
+.s1_1_con_wrap .container .tab{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.s1_1_con_wrap .container .tab .tab-link{
+    background: #9d9d9d;
+    width: 400px;
+    height: 50px;
+    line-height: 50px;
+    margin-right: 20px;
+}
+.s1_1_con_wrap .container .tab li.tab-link:hover{
+    background: #509d48;
+    cursor: pointer;
+}
+.s1_1_con_wrap .container .tab li.tab-link.active{
+    background: #509d48;
+    display: inline-block;
+}
+
+.s1_1_con_wrap .container .tab li.tab-link:last-child{
+     margin-right: 0px;
+}
+.s1_1_con_wrap .container .tab .tab-link {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/*의료진 스타일*/
+.s1_1_box_wrap, .s1_1_box_wrap2{
+    display: flex;
+}
+.s1_1_box_wrap .left_dr_box, .s1_1_box_wrap2 .left_dr_box{
+    width: 326px;
+    height: 396px;
+   
+}
+.s1_1_box_wrap .right_all_box, .s1_1_box_wrap2 .right_all_box{
+    width: calc(100% - 326px);
+    margin-left: 30px;
+     margin-top: 85px;
+}
+.right_all_box .dr_name{
+   font-size: 24px;
+   font-weight: bold;
+}
+.right_all_box .dr_part strong{
+    display: block;
+    font-size: 18px;
+    margin-top: 15px;
+}
+.right_all_box .dr_part span{
+    display: block;
+    font-size: 16px;
+}
+.right_all_box table{
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border-top: 2px solid #464547;
+
+    
+}
+.right_all_box table thead{
+    background: #ecf8ff;
+    
+    
+}
+.right_all_box table tbody span.poss{
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ea3c1c;
+}
+.right_all_box table th, .right_all_box table td{
+    border: 1px solid #939598;
+    padding: 15px;
+    font-size: 15px;    
+    
+    
+}
+.right_all_box table th:first-child{
+    border-left: none;
+}
+.right_all_box table th:last-child, .right_all_box table td:last-child{
+    border-right: none;
+}
+.view_btn{
+    margin-top: 20px;
+}
+.view_btn h3{
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    display: block;
+    border: 1px solid #509d48;
+    padding: 10px;
+    color: #509d48;
+    text-align: center;
+    cursor: pointer;
+}
+.view_btn h3:hover{
+    background: #509d48;
+    color: #fff;
+}
+
+.s1_1_box_wrap2{
+    margin-top: 60px;
+    border-top: 1px solid #464547;
+    padding-top: 60px;
+}
+
+
+#glaylayer{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+     top: 0;
+     background: rgba(0,0,0,0.7);
+     display: none;
+     justify-content: center; 
+     align-items: center; 
+            
+}
+#overlayer{
+     position: relative;
+     text-align: center;
+ }
+#overlayer .sub1_p1 img{
+    padding: 20px;
+    height: 925px;
+    
+}
+.md_btn_close {
+     position: absolute;
+     top: 5px;
+     right: 5px;
+     cursor: pointer;
+ }
+
+
+
+/*반응형 스타일/////////*/
+@media screen and (max-width:768px){
+    #s1_1_con_wrap{
+        width: 90%;
+    }
+    #s1_1_con_wrap #container ul{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    #s1_1_con_wrap #container ul li{
+        width: 48%;
+        margin-right: 0px;
+        margin-top: 15px;
+        
+    }
+    #s1_1_con_wrap #container ul li:last-child{
+        margin-right: 0px;
+    }
+    .s1_1_box_wrap, .s1_1_box_wrap2{
+        display: block;
+    }
+    .s1_1_box_wrap .left_dr_box, .s1_1_box_wrap2 .left_dr_box{
+        width: 100%;
+        text-align: center;
+    }
+    .s1_1_box_wrap .left_dr_box img, .s1_1_box_wrap2 .left_dr_box img{
+        max-width: 100%;
+        
+    }
+    .s1_1_box_wrap .right_all_box, .s1_1_box_wrap2 .right_all_box{
+     width: 100%;
+     margin-left: 0px;    
+   }
+    .right_all_box .dr_name{
+        margin-top: 30px;
+        
+    }    
+}
+
+@media screen and (max-width:364px){
+    .right_all_box table tbody span.poss{
+        font-size: 13px;
+    }
+    .right_all_box table th, .right_all_box table td{
+        padding: 10px;
+    }
+}
+@media screen and (min-width:330px) and (max-width:359px){
+    .right_all_box .dr_name{
+        margin-top: 10px;
+    }
+    
+}
+
+@media screen and (max-width:329px){
+    .right_all_box .dr_name{
+        margin-top: -15px;
+    }
+    
+}

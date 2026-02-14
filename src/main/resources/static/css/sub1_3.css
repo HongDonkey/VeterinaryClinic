@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+
+
+/*진료예약조회 스타일*/
+#reserv_wrap{
+   padding: 30px;
+   background: #def1f8; 
+   border-top: 5px solid #464547;
+   margin-bottom: 60px;
+   overflow: hidden;
+       
+}
+.reserv_box1{
+   margin: 5px 0 35px;    
+   position: relative;
+   
+     
+}
+p.tit{
+   padding: 25px 10px;
+   font-size: 22px;
+   font-weight: bold;
+}
+p.tit span{
+    font-size: 18px;
+    font-weight: normal;
+    padding: 0 50px;
+}
+.button{
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    background:  #509d48;
+    color: #fff;
+    border-collapse: collapse;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 10px;
+    width: 140px;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.button:hover{
+    background: linear-gradient(to right, #509d48,#0c80ae 100%);
+}
+
+.reserv_box2{
+     position: relative;
+     border-top: 1px solid #464547;
+     padding-bottom: 20px;
+}
+/*input 안 글자*/
+.reserv_form input{
+    border: none;
+    height: 45px;
+    padding: 0 10px;
+    font-size: 14.5px;
+    
+}
+.reserv_form input.t_txt1, .reserv_form input.t_txt2{
+    margin-right: 20px;
+    width: 16%;
+    outline: none;
+}
+
+.reserv_form .t_txt3{
+    width: 8%;
+    margin-right: 12px;
+    outline: none;
+}
+.reserv_box2 .button{
+    margin-top: 40px;
+}
+.reserv_form{
+    padding-right: 50px;
+}
+/*span.p_Num strong{
+    border: 1px solid #000;
+}*/
+
+
+/*유의사항 스타일*/
+#reserv_care{
+    margin-top: 80px;
+}
+h3.care_t span img{
+    width: 35px;
+    height: 35px;
+}
+h3.care_t{
+    font-size: 20px;
+    font-weight: 700;
+    display: inline-block;
+    
+}
+h3.care_t span{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+ul.reserv_box{
+    border: 1px solid  #939598;
+    margin-top: 20px;
+    padding: 20px;
+}
+ul.reserv_box{
+    overflow: hidden;
+    
+}
+ul.reserv_box li{
+    display: block;
+    font-size: 16px;
+    line-height: 35px;
+    letter-spacing: -0.8px;
+    overflow: hidden;
+    font-weight: bold;
+}
+ul.reserv_box li a:first-child{
+    float: left;
+    display: inline-block;
+    color:  #509d48;
+}
+ul.reserv_box li a:last-child{
+    float: left;
+    display: inline-block;
+    margin-left: 5px;
+    
+}   
+
+
+
+@media screen and (max-width:798px){
+    p.tit span{
+        display: block;
+        padding: 0;
+        margin-top: 8px;
+    
+    }
+    .button{
+        top: 15px;
+    }
+    .reserv_box2 .button{
+        top: 45px;
+    }
+    .reserv_form input.t_txt1, .reserv_form input.t_txt2{
+        width: 30%;
+    }
+    .reserv_form span{
+        display: block;
+        margin-top: 25px;
+
+    }
+    .reserv_form .t_txt3{
+        width: 15%;
+    }
+}
+
+@media screen and (max-width:767px){
+    #s1_3_con_wrap{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:680px){
+    #reserv_wrap{
+        padding: 10px 20px;
+    }
+    .reserv_box2 p.tit{
+        margin-top: 15px;
+    }
+    .reserv_box1{
+        margin-bottom: 40px;
+    }
+    .button{
+        display: block;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        position: static;
+        
+    }
+    .reserv_form{
+        padding-right: 0;
+    }
+    .reserv_form input.t_txt1, .reserv_form input.t_txt2{
+        width: 90%;
+        display: block;
+    }
+    .reserv_form input.t_txt1{
+        margin-bottom: 20px;
+    }
+    .reserv_form .t_txt3{
+        width: 18%;
+    }
+    
+}
+
+/*유의사항 반응형 스타일*/
+
+@media screen and (max-width:469px){
+    #reserv_care{
+    margin-top: 50px;
+}
+    h3.care_t{
+    font-size: 20px;
+    font-weight: 700;
+    display: inline-block;
+}
+}
+@media screen and (max-width:418px){
+    ul.reserv_box li a:last-child{
+      line-height: 20px;
+}
+}

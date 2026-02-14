@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+
+</head>
+<body>
+	<header th:fragment="sub6">
+	  <!--서브 대메뉴 배경-->
+    <!--반려동물건강정보_sub6_1_content-->
+    <div id="con_sub6_1_top_bg">
+         <div id="sub6_1_top_bg"><img src="img/sub/sub6_program/sub6_1/s6_img1.png" alt="프로그램">
+         <h3>프로그램</h3>
+         </div><!--sub_img-->
+    </div><!--con_sub6_1_top_bg--> <!--상단이미지-->
+    <div id="con_sub_navi_wrap">
+        <div id="con_sub_navi_wrap_2">   
+        <div id="con_sub_navi" class="row_center">
+          
+           <div class="home">
+					<a th:href="@{/}">홈</a>
+			</div>
+           
+           <!--<nav class="gnb_navi">-->
+           <ul>
+               <li>
+                   <a>프로그램
+                   <div class="arrow_btn">
+                       <span class="material-icons">expand_more</span>
+                   </div>
+                   </a>
+					<div class="con_navi_sec">
+						<ul>
+							<li><a th:href="@{/notice_schd}"><span>일정/예약/조회<strong></strong></span></a>
+							<li><a th:href="@{/reception}"><span>진료안내<strong></strong></span></a>
+							<li><a th:href="@{/internal}"><span>진료과목<strong></strong></span></a>
+							<li><a th:href="@{/internalTeam}"><span>의료진<strong></strong></span></a>
+							<li><a th:href="@{/history}"><span>병원소개<strong></strong></span></a>
+							<li><a th:href="@{/healthInfo}"><span>프로그램<strong></strong></span></a>
+						</ul>
+					</div>
+               </li>
+            <!-- </nav>gnb_navi-->
+           
+            <!--<nav class="sub_navi">-->
+               <li>
+                   <a>반려동물 건강정보
+                   <div class="arrow_btn">
+                       <span class="material-icons">expand_more</span>
+                   </div>
+                   </a>
+                   <div class="con_navi_sec">
+                    <ul>
+                    	<li><a th:href="@{/healthInfo}">반려동물 건강정보</a></li>
+                    	<li><a th:href="@{/bloodDonation}">헌혈 프로그램</a></li>
+                    	<li><a th:href="@{/fund}">발전기금 안내</a></li>
+
+                        
+                    </ul>   
+                   </div>
+               </li>
+           </ul>
+           <!--</nav>sub_navi-->
+       
+        </div><!--sub_navi-->
+        </div>
+    </div><!--sub_navi_wrap//////////////////-->
+	</header>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <div th:insert="~{fragments/commonLink :: commonLink}"></div>     
+    <title>진료일정 안내</title>
+	<script th:src="@{/js/sub1_1.js}"></script>
+	<link th:href="@{/css/sub1_1.css}" rel="stylesheet">
+    <script>
+     var tabId;
+       $(function(){ //jQuery 시작
+	//	alert($("#tab1").html())
+		
+          
+      }); //jQuery 종료
+      
+      $(document).ready(function () {
+    	    $('.tab-link').first().trigger('click');
+    	});
+
+      
+      function tabClick(tabId) {
+    	    
+    	    $('#s1_1_dr_box_wrap > div').hide(); // 모든 탭 컨텐츠 숨기기
+    	    
+    	    var $target = $('#C_' + tabId);
+
+    	    $target.fadeIn();
+
+    	    $('.tab-link').removeClass('active');
+    	    $('#' + tabId).addClass('active');
+    	}
+
+     
+      
+    </script>
+ 
+</head>
+<body>
+	<div th:insert="~{fragments/header :: header}"></div>     
+       
+    <!--서브 네비게이션-->  
+    <div th:insert="~{fragments/sub1 :: sub1}"></div>
+    
+    <!--서브 상단 제목-->
+    <div id="sub_top_t_wrap" class="row_center">
+        <h3 class="sub_top_t">진료일정 안내</h3>
+        
+        <div class="sub_top_box">
+           <figure><img src="img/sub/sub_common/circle.png" alt="포인트1"></figure>
+            <p>원하시는 진료과를 선택하시면 해당 의료진, 진료시간표 등 다양한 서비스를 이용하실 수 있습니다.</p>
+        </div>
+    </div>
+    
+    <!--진료일정 안내_sub1_1_content-->
+    <div class="s1_1_con_wrap row_center">
+        <div class="container">
+        <ul class="tab"> <!--탭버튼-->
+            <li class="tab-link" id="INT" onClick="tabClick(this.id)">내과</li>
+            <li class="tab-link" id="SUR" onClick="tabClick(this.id)">외과</li>
+            <li class="tab-link" id="OPH" onClick="tabClick(this.id)">안과</li>
+            <li class="tab-link" id="RAD" onClick="tabClick(this.id)">영상의학과</li>
+            <li class="tab-link" id="CLP" onClick="tabClick(this.id)">임상병리과</li>
+            <li class="tab-link" id="EMC" onClick="tabClick(this.id)">응급중환자의학과</li>
+        </ul>
+        </div><!--container////////-->
+       
+        <div id="s1_1_dr_box_wrap">
+         
+        <div id="C_INT" class="s1_1_box_wrap" style="display: none;">
+        <div th:replace="reservation/dept/INT"></div>
+        </div>
+        <div id="C_SUR" class="s1_1_box_wrap" style="display: none;">           
+        <div th:replace="reservation/dept/SUR"></div>
+        </div>
+        <div id="C_OPH" class="s1_1_box_wrap" style="display: none;">
+        <div th:replace="reservation/dept/OPH"></div>
+        </div>
+        <div id="C_RAD" class="s1_1_box_wrap" style="display: none;">
+        <div th:replace="reservation/dept/RAD"></div>
+        </div>
+        <div id="C_CLP" class="s1_1_box_wrap" style="display: none;">
+        <div th:replace="reservation/dept/CLP"></div>
+        </div>
+        <div id="C_EMC" class="s1_1_box_wrap" style="display: none;">
+        <div th:replace="reservation/dept/EMC"></div>
+        </div>
+  
+            
+        </div><!--right_all_box-->
+            
+
+        
+    </div><!--s1_1_box_wrap-->                                                                                                                                                            
+           
+           
+     <div id="glaylayer"><!--어둡게하는 부분-->
+        <div id="overlayer"><!--큰이미지-->
+            <figure class="sub1_p1"><img src="img/sub/sub1_m_sch/sub1_1/sub1_p1.png" alt="논문1" class="big"></figure>
+            <span class="md_btn_close">
+                <img src="img/sub/sub1_m_sch/sub1_1/sub1_close.png" alt="닫기"></span>
+        </div>
+    </div><!--glayLayer-->  <!--순서를 제일 높게, 제일 위에 띄워야해서-->     
+           
+        
+        
+         
+           
+               
+   <div th:insert="~{fragments/footer :: footer}"></div>     
+</body>
+</html>

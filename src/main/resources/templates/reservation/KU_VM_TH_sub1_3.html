@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<div th:insert="~{fragments/commonLink :: commonLink}"></div>
+	<script th:src="@{/js/sub1_3.js}"></script>
+	<link th:href="@{/css/sub1_3.css}" rel="stylesheet">
+	
+    <title>진료예약 조회</title>
+
+   
+</head>
+<body>
+    <div th:insert="~{fragments/header :: header}"></div>     
+      
+    <!--서브 네비게이션-->  
+    <div th:insert="~{fragments/sub1 :: sub1}"></div>
+    
+    <!--서브 상단 제목-->
+    <div id="sub_top_t_wrap" class="row_center">
+        <h3 class="sub_top_t">진료예약 조회</h3>
+        
+        <div class="sub_top_box">
+           <figure><img src="img/sub/sub_common/circle.png" alt="포인트1"></figure>
+            <p>회원 및 비회원 예약 내역을 확인하실 수 있습니다.</p>
+        </div>
+    </div>
+    
+    <!--진료예약조회_sub1_3_content-->
+    <div id="s1_3_con_wrap" class="row_center">
+    <div id="reserv_wrap">
+    <div class="reserv_box1">
+      <p class="tit">회원 예약조회 
+      <span>로그인 이후 진료예약 내역을 확인하실 수 있습니다.</span>
+      </p>
+        
+     <input type="submit" value="조회하기" formaction="#" formmethod="post" class="button">   
+    </div><!--resev_box1-->
+        
+    <div class="reserv_box2">
+        <p class="tit">비회원 예약조회</p>
+        
+        <div class="reserv_form">
+        <input type="text" name="u_Name" id="u_Name" class="t_txt1" pattern="[가-하]{2,5}" placeholder="예약자 성함" title="예약자 성함">
+        
+        <input type="password" name="Pwd" id="Pwd" class="t_txt2" pattern="[a-z^0-9]{3,8}" placeholder="패스워드" title="패스워드 입력해주세요">
+        
+        <span class="p_Num">
+        <input type="text" name="u_pn1" id="u_pn1" class="t_txt3" maxlength="4" placeholder="연락처" title="연락처 첫번째자리">
+        <strong></strong>
+        <input type="text" name="u_pn2" id="u_pn2" class="t_txt3" maxlength="4" title="연락처 중간자리">
+         <strong></strong> 
+        <input type="text" name="u_pn3" id="u_pn3" class="t_txt3" maxlength="4" title="연락처 마지막자리">    
+        </span><!--연락처칸-->    
+        </div><!--비회원 예약조회칸///////-->
+        
+        <input type="submit" value="조회하기" formaction="#" formmethod="post" class="button">
+    </div><!--reserv_box2-->
+        
+    </div><!--reserv_wrap-->
+    
+    <div id="reserv_care">
+        <h3 class="care_t"><span><img src="img/sub/sub1_m_sch/sub1_3/strip_s1_3_img.png" alt="느낌표 아이콘"></span>진료예약 조회 시 유의사항</h3>
+        <ul class="reserv_box">
+            <li><a>01.</a> <a>인터넷 진료예약 변경 및 취소는 예약일 전일까지 가능</a></li>
+            <li><a>02.</a> <a>예약시간 20분전까지 내원하시어 행정 원무과 접수</a></li>
+            <li><a>03.</a> <a>진료예약의 조회, 변경, 취소는 예약자 본인만 가능</a></li>
+        </ul>
+    </div><!--reserv_care-->
+    
+    
+    
+    </div><!--s1_3_con_wrap-->
+           
+          
+           
+         
+           
+               
+        
+  <div th:insert="~{fragments/footer :: footer}"></div>
+</body>
+</html>

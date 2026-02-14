@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+
+
+/*접수 및 절차 안내 스타일*/
+.sub_top_box span:first-child{
+    color: #509d48;
+}
+
+
+.sub2_1_top_t{ /*야간진료는 응급의료센터 텍스트*/
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ce1c1c;
+    margin-top: -20px;
+    padding: 0 30px 30px;
+    
+}
+.s2_1_box{
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: -0.8px;
+    
+}
+.s2_1_box .s2_1_box_l{
+    width: 250px;
+    border: 1px solid #939598;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    border-bottom: none;
+}
+.s2_1_box_l .s2_1_i{ /*콘텐츠 아이콘*/
+    background: url(../img/sub/sub2_m_info/sub2_1/strip_s2_1_img.png) 0 0 no-repeat;
+    width: 85px;
+    height: 85px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.s2_1_box:nth-child(2) figure:first-child{
+    background-position: -100px 0;
+}
+.s2_1_box:nth-child(3) figure:first-child{
+    background-position: -200px 0;
+}
+.s2_1_box:nth-child(4) figure:first-child{
+    background-position: 0 -100px;
+}
+.s2_1_box:nth-child(5) figure:first-child{
+    background-position: -100px -100px;
+}
+.s2_1_box:nth-child(6) figure:first-child{
+    background-position: -200px -100px;
+}
+.s2_1_st{
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.s2_1_st span, .s2_1_st strong{
+    font-size: 18px;
+    display: block;
+}
+.s2_1_box_l .s2_1_arrow{ /*화살표 아이콘*/
+    position: absolute;
+    bottom: -18px;
+    left: calc(50% - 12.5px);
+    z-index: 5;
+}
+
+.s2_1_box .s2_1_box_r{
+    width: calc(100% - 250px);
+    border: 1px solid #939598;
+    border-left: none;
+    border-bottom: none;
+    padding: 30px;
+}
+.s2_1_box_r ul{
+    line-height: 30px;
+}
+.s2_1_box_r ul li{
+    font-size: 15px;
+    font-weight: bold;
+    
+    
+}
+.s2_1_box_r ul li strong{
+    color: #509d48;
+}
+.s2_1_box_r ul li:nth-child(2){
+    margin-top: 10px;
+}
+.s2_1_box:last-child .s2_1_box_r, .s2_1_box:last-child .s2_1_box_l{
+    border-bottom: 1px solid #939598;
+}
+.s2_1_box:last-child .s2_1_box_r ul li span{
+    display: block;
+    margin-top: 10px;
+}
+.s2_1_arrow_mb{
+    display: none;
+}
+
+
+/*반응형 스타일*/
+@media screen and (max-width:767px){
+    #s2_1_con_wrap{
+        width: 90%;
+    }
+    /*.s2_1_box:first-child .i_t_all, .s2_1_box:nth-child(5) .i_t_all{
+        margin-top: 20px;
+    }*/
+    .s2_1_box{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .s2_1_box .s2_1_box_l{
+        width: 90%;
+        
+    }
+    .s2_1_box .s2_1_box_r{
+        width: 90%;
+        border-left: 1px solid #939598;
+    }
+    .s2_1_box:last-child .s2_1_box_l{
+        border-bottom: none;
+    }
+    .s2_1_arrow_mb{
+    display: block;    
+    position: absolute;
+    bottom: -18px;
+    left: calc(50% - 12.5px);
+    z-index: 5;
+    }
+}

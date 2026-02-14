@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.VeterinaryClinic.Mapper.DeptMapper">
+
+<resultMap id="DeptMap" type="DeptDTO">
+        <result property="name" column="NAME"/>
+        <result property="acro" column="ACRO"/>
+        <result property="insUser" column="INS_USER"/>
+        <result property="insTime" column="INS_TIME"/>
+        <result property="modUser" column="MOD_USER"/>
+        <result property="modTime" column="MOD_TIME"/>
+    </resultMap>
+    
+ 	<select id="getAllDept" resultMap="DeptMap">
+        SELECT * FROM DEPARTMENT
+    </select>   
+    
+</mapper>
