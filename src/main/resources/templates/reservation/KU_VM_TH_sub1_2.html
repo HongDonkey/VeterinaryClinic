@@ -137,7 +137,7 @@
         const hour = $("#hour").val();
         const minute = $("#minute").val();
         const title = $("#title").val();
-        const contents = $("#contents").val();
+        const symp = $("#symp").val();
 
         const phone =
             $("#ph1").val() + "-" +
@@ -156,7 +156,7 @@
         if (!doctor) return alert("의료진을 선택하세요.");
         if (!date) return alert("희망진료일을 선택하세요.");
         if (!title) return alert("제목을 입력하세요.");
-        if (!contents) return alert("내용을 입력하세요.");
+        if (!symp) return alert("증상을 입력하세요.");
         if (!hour || !minute) return alert("희망진료시간을 선택하세요.");
         if (!$("#ph1").val().trim() || !$("#ph2").val().trim() || !$("#ph3").val().trim()) return alert("연락처를 입력하세요.");
         if (!mail) return alert("메일을 입력하세요.");
@@ -179,15 +179,15 @@
 		
         const requestData = {
             animalType: $('input[name="animalType"]:checked').val(),
-            kind: $("#kindSelect").prop("disabled") 
+            animalKind: $("#kindSelect").prop("disabled") 
             		? $("#kindEtcInput").val()
                     : $("#kindSelect").val(),
-            doctorType: $('input[name="doctorType"]:checked').val(),
+            dept: $('input[name="doctorType"]:checked').val(),
             doctorId: $("#doctorSelect").val(),
             date: $("#btd").val(),
             time: $("#hour").val() + $("#minute").val(),
             title: $("#title").val(),
-            contents: $("#contents").val(),
+            symp: $("#symp").val(),
             phone: $("#ph1").val() + "-" +
 		            $("#ph2").val() + "-" +
 		            $("#ph3").val(),
@@ -203,7 +203,7 @@
             data: JSON.stringify(requestData),
             success: function () {
                 alert("예약이 완료되었습니다.");
-                location.href = "/reservation/list"; // 성공 후 이동
+                //location.href = "/reservation/list"; // 성공 후 이동
             },
             error: function () {
                 alert("예약 저장 실패");
@@ -384,9 +384,9 @@
                     </tr>
                     
                     <tr>
-                        <th>예약내용</th>
+                        <th>증상</th>
                         <td>
-                        <textarea name="texts" class="texts" id="contents"></textarea></td>
+                        <textarea name="texts" class="texts" id="symp"></textarea></td>
                     </tr>
                     
                 </table>

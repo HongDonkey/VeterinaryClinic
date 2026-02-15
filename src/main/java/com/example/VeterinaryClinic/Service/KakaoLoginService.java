@@ -2,6 +2,7 @@ package com.example.VeterinaryClinic.Service;
 
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -22,7 +23,9 @@ import lombok.RequiredArgsConstructor;
 public class KakaoLoginService {
 
     private final KakaoLoginMapper kakaomemberMapper;
-    private final String CLIENT_ID = "0ec842b0a2984fa23f7e2ac2315598af";
+    @Value("${kakao.client.secret}")
+    private String clientId;
+
     private final String REDIRECT_URI = "http://localhost:8080/login/kakao/callback";
 
     // 1) code로 access token 받기
@@ -34,7 +37,7 @@ public class KakaoLoginService {
 
         MultiValueMap<String, String> params = new LinkedMultiValueMap<>();
         params.add("grant_type", "authorization_code");
-        params.add("client_id", CLIENT_ID);
+        params.add("client_id", clientId);
         params.add("redirect_uri", REDIRECT_URI);
         params.add("code", code);
 

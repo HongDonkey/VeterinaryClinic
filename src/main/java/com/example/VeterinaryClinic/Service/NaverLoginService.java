@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.json.JSONObject;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -23,11 +24,12 @@ import lombok.RequiredArgsConstructor;
 public class NaverLoginService {
 
 	private final NaverLoginMapper naverMemberMapper;
-
+	 @Value("${naver.client.id}")
+	    private String clientId;
+	 @Value("${naver.client.secret}")
+	    private String clientSecret;
 	public Map<String, Object> processNaverLogin(String code, String state) {
 
-        String clientId = "p5WLYChHNHj3WwvpSM_z";
-        String clientSecret = "9d02C6vLwl";
         String redirectUri = "http://localhost:8080/login/naver/callback";
 
         // ⬇ Access Token 요청
